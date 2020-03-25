@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 9f86d84bc941df94fb0347338737f98f
+guid: 4365b4e66078fd14cbdf301a37947bdc
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Arms Hip Hop Dance
+    second: Bboy Hip Hop Move
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,18 +35,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Arms Hip Hop Dance
+      name: Bboy Hip Hop Move
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 659
+      lastFrame: 66
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

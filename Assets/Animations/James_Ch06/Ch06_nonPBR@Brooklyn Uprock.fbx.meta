@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: b181f980cf3c66c4893345e602d41ffa
+guid: 0ebfbb95ca8fe91419d84e6172038ed3
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Arms Hip Hop Dance
+    second: Brooklyn Uprock
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,18 +35,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Arms Hip Hop Dance
+      name: Brooklyn Uprock
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 659
+      lastFrame: 146
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
