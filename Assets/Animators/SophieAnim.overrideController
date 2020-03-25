@@ -8,4 +8,40 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: SophieAnim
   m_Controller: {fileID: 9100000, guid: c97444a2e8bcb9343a057c94c964d740, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 9f86d84bc941df94fb0347338737f98f,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: fae2d8500b8a37541bd6fc01b37ef643,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 4365b4e66078fd14cbdf301a37947bdc,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: dd5e5b9711a15bd4b9e5d9391453a74d,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 0e4fcda03358bb743a9e0faf11f53a37,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: fbe604c1cf9ca5249b0ba663c47d0830,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 2fcc629c38cf1414eb6ae7af28724da5,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 2bd8f7bc866807943866519d468c9b61,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: f504b55bba73d494cb314e62e230569d,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 9319723e919650f4d92f2bfe7f11e533,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 3339b35daecfeb842b8b76dd22477010,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: c2645a1bc02b30c47b3ea873e2f02cbf,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: e37ecad471926d34ca884b2936701987,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 1f6ecdc9b7a57284993d08b4c7912f84,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: a682a7633d32cf74eb6ba709a4499921,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: fa4f5804b31bd96438968faf66b08c6c,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 8a22d575f27d43a4eac9b40e103f3e57,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 71871bcba105f074ea97ff669ee9780d,
+      type: 3}

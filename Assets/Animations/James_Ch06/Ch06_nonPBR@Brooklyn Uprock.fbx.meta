@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Brooklyn Uprock
+    second: Ch06 Brooklyn Uprock
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Brooklyn Uprock
+      name: Ch06 Brooklyn Uprock
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0

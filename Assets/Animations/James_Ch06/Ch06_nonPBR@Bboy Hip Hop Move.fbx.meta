@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Bboy Hip Hop Move
+    second: Ch06 Bboy Hip Hop Move
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Bboy Hip Hop Move
+      name: Ch06 Bboy Hip Hop Move
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0

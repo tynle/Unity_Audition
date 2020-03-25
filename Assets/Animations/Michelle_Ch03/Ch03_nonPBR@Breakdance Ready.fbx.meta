@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Breakdance Ready
+    second: Ch03 Breakdance Ready
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Breakdance Ready
+      name: Ch03 Breakdance Ready
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0

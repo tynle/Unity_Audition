@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Arms Hip Hop Dance
+    second: Ch06 Arms Hip Hop Dance
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Arms Hip Hop Dance
+      name: Ch06 Arms Hip Hop Dance
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0

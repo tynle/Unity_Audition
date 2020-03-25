@@ -52,7 +52,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: c97444a2e8bcb9343a057c94c964d740, type: 2}
+      objectReference: {fileID: 22100000, guid: 2ae99845b4264224ba931eaeac0a6d7a,
+        type: 2}
     - target: {fileID: -6057140222963153312, guid: 5ad9599c236acee4ba09f068828b82d4,
         type: 3}
       propertyPath: m_CullingMode

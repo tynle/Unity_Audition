@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Hip Hop Dancing
+    second: Ch06 Hip Hop Dancing
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Hip Hop Dancing
+      name: Ch06 Hip Hop Dancing
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
