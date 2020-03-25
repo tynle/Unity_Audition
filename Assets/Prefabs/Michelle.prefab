@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 758816264781885194}
+  - component: {fileID: 463035834}
   m_Layer: 0
   m_Name: Michelle
   m_TagString: Player
@@ -31,6 +32,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &463035834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8347469741457695146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e717f85d9e2dc449bd753a214029863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RunTestOnPlay: 0
+  sceneCamera: {fileID: 0}
+  danceSpot: {x: 0, y: 0, z: 0}
+  numberOfDancingMove: 6
+  smoothReturn: 5
 --- !u!1001 &4025864464416515177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46,7 +64,7 @@ PrefabInstance:
     - target: {fileID: -6057140222963153312, guid: e5d458d1d8bc3f74fb11c50d2df0ab72,
         type: 3}
       propertyPath: m_CullingMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e5d458d1d8bc3f74fb11c50d2df0ab72,
         type: 3}
@@ -106,7 +124,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: e5d458d1d8bc3f74fb11c50d2df0ab72,
         type: 3}
       propertyPath: m_Name
-      value: Ch03
+      value: Body
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: e5d458d1d8bc3f74fb11c50d2df0ab72,
         type: 3}
