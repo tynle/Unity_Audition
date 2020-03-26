@@ -19,12 +19,16 @@ public class PlayerController : MonoBehaviour
     public bool RunTestOnPlay;
     public Camera sceneCamera;
     public Vector3 danceSpot;
-    public int numberOfDancingMove;
     public float smoothReturn;
 
     // private parameters
     private Transform m_originBodyTransform;
     private Coroutine m_reposCoroutine = null;
+    private List<int> m_danceRoutine;
+    private int m_posInRoutine = -1;
+    private bool m_missedMove = false;
+    private float m_timePerMove = -1;
+    private int m_numOfMove = -1;
     
     ///////////////
     // system events
@@ -35,18 +39,44 @@ public class PlayerController : MonoBehaviour
         m_body = character.GetComponent<Transform>();
         m_anim = character.GetComponent<Animator>();
         m_originBodyTransform = m_body;
+        m_numOfMove = m_anim.runtimeAnimatorController.animationClips.Length - 3;
         
         if (RunTestOnPlay) {
-            setMusicSpeed(2.0f);
+            List<int> routine = new List<int>();
+            routine.Add(1);
+            routine.Add(2);
+            routine.Add(3);
+            routine.Add(4);
+            routine.Add(5);
+            routine.Add(6);
+
+            Setup(routine, 2.0f, 2.5f);
             m_wrapper.position = new Vector3(m_wrapper.position.x, m_wrapper.position.y, m_wrapper.position.z + 5.0f);
             MoveToDanceSpot();
-            StartCoroutine("autoSwitchDance");
+
+            Invoke("TriggerDance", 2.0f);
+            Invoke("TriggerMiss", 5.0f);
         }
     }
-    
 
     ///////////////
-    // cutscene
+    // game setup
+    public void Setup(List<int> danceRoutine, float musicSpeed, float timePerMove) {
+        m_anim.speed *= musicSpeed;
+        m_danceRoutine = danceRoutine;
+        m_timePerMove = timePerMove;
+
+        for(int i = 0; i < m_danceRoutine.Count;) {
+            if (m_danceRoutine[i] < 0 || m_danceRoutine[i] > m_numOfMove) {
+                m_danceRoutine.RemoveAt(i);
+            } else {
+                i++;
+            }
+        }
+    }
+
+    ///////////////
+    // dance spot
     public void MoveToDanceSpot() {
         m_body = m_originBodyTransform;
         SmoothRePositioning(m_wrapper, danceSpot, false);
@@ -58,16 +88,39 @@ public class PlayerController : MonoBehaviour
     }
 
     ///////////////
-    // game events
-    public void TriggerDance(int mode) {
-        if (mode < 0) mode = 0;
-        if (mode > numberOfDancingMove) mode = numberOfDancingMove;
+    // dance routine
+    public void TriggerDance() {
+        m_posInRoutine = 0;
+        StartCoroutine("DanceWithRoutine");
+    }
 
-        m_anim.SetInteger(INT_TYPE, mode);
-        m_anim.SetTrigger(TRIGGER_SWITCH);
+    IEnumerator DanceWithRoutine() {
+        while (m_posInRoutine >= 0 && m_posInRoutine <= m_numOfMove) {
+            if (m_missedMove) {
+                m_missedMove = false;
+            } else {
+                SmoothRePositioning(m_body, danceSpot, true);
+                m_anim.SetTrigger(TRIGGER_SWITCH);
+                m_anim.SetInteger(INT_TYPE, m_danceRoutine[m_posInRoutine]);
+            }
+            
+            // set next move
+            m_posInRoutine++;
+            if (m_posInRoutine > m_numOfMove) m_posInRoutine = 0;
+
+            yield return new WaitForSeconds(m_timePerMove);
+        }
+    }
+
+    public void TriggerMiss(int mode) {
+        m_missedMove = true;
+        m_anim.SetInteger(INT_TYPE, 0);
     }
 
     public void TriggerEnd(bool isWinner) {
+        m_posInRoutine = -1;
+        StopCoroutine("DanceWithRoutine");
+        SmoothRePositioning(m_body, danceSpot, true);
         if (isWinner) {
             m_anim.SetTrigger(TRIGGER_WIN);
         } else {
@@ -76,11 +129,7 @@ public class PlayerController : MonoBehaviour
     }
 
     ///////////////
-    // others
-    public void setMusicSpeed(float spd) {
-        m_anim.speed *= spd;
-    }
-    
+    // others    
     void SmoothRePositioning(Transform me, Vector3 target, bool faceToTarget) {
         if (m_reposCoroutine == null) {
             m_reposCoroutine = StartCoroutine(doReposition(me, target, faceToTarget));
@@ -108,23 +157,5 @@ public class PlayerController : MonoBehaviour
         lookPoint.y = me.position.y;
 
         me.LookAt(lookPoint);
-    }
-    IEnumerator autoSwitchDance() {
-        int i = numberOfDancingMove;
-        while (i > -3) {
-            yield return new WaitForSeconds(5.0f);
-            if (i == -1) {
-                Debug.Log("Win");
-                TriggerEnd(true);
-            } else if (i == -2) {
-                Debug.Log("Lose");
-                TriggerEnd(false);
-            } else {
-                Debug.Log("Switch");
-                TriggerDance(i);
-            }
-            i--;
-        }
-        StopCoroutine("autoSwitchDance");
     }
 }
