@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e717f85d9e2dc449bd753a214029863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunTestOnPlay: 1
+  RunTestOnPlay: 0
   danceSpot: {x: 4, y: 0, z: 2}
   smoothReturn: 5
 --- !u!1001 &5233951604143122773

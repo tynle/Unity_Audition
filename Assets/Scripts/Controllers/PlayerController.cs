@@ -42,19 +42,22 @@ public class PlayerController : MonoBehaviour
         
         if (RunTestOnPlay) {
             List<int> routine = new List<int>();
+            routine.Add(6);
+            routine.Add(3);
+            routine.Add(5);
+            routine.Add(2);
             routine.Add(1);
+            routine.Add(6);
+            routine.Add(4);
             routine.Add(2);
             routine.Add(3);
             routine.Add(4);
-            routine.Add(5);
-            routine.Add(6);
 
-            Setup(routine, 1.5f, 2.5f);
+            Setup(routine, 1.5f, 5.0f);
             m_wrapper.position = new Vector3(m_wrapper.position.x, m_wrapper.position.y, m_wrapper.position.z + 5.0f);
             MoveToDanceSpot();
 
-            Invoke("TriggerDance", 2.0f);
-            Invoke("TriggerMiss", 5.0f);
+            Invoke("TriggerDance", 10.3f);
         }
     }
 
@@ -94,7 +97,7 @@ public class PlayerController : MonoBehaviour
     }
 
     IEnumerator DanceWithRoutine() {
-        while (m_danceRoutine[m_posInRoutine] >= 0 && m_danceRoutine[m_posInRoutine] <= m_numOfMove) {
+        while (m_danceRoutine[m_posInRoutine] > 0 && m_danceRoutine[m_posInRoutine] <= m_numOfMove) {
             if (m_missedMove) {
                 m_missedMove = false;
             } else {
