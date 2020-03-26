@@ -7,6 +7,7 @@ public class PoolManager : SingletonMono<PoolManager>
     #region enum
     public enum PoolObject
     {
+        None,
         Up,
         Down,
         Left,

@@ -23,6 +23,8 @@ public class Pool : MonoBehaviour
                 {
                     GameObject obj = Instantiate(_Prefab, Vector3.zero, Quaternion.identity, transform);
                     obj.SetActive(false);
+                    ObjectItem item = obj.GetComponent<ObjectItem>();
+                    item.ObjectType = _PoolObject;
                     _PooledObjects.Add(obj);
                 }
             }
