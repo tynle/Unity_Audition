@@ -45,6 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 3881321766201664468, guid: 8d9951f789ea85f45b1beed43e42cda5, type: 3}
+  buttons:
+  - {fileID: 1926480833132679051, guid: 6b8de744e39ba3446b9aace733ad41e4, type: 3}
+  - {fileID: 4541588919506408139, guid: 4ce0204dc23d1da4fb7a3a736ada2d3c, type: 3}
+  - {fileID: 7531717906293770757, guid: bb4f40a958193f9439edcfe644b0db49, type: 3}
+  - {fileID: 5256947355109913371, guid: 218213f5f249e2445b0777fb1f40a096, type: 3}
 --- !u!114 &1979115364352764910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,4 +62,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f85ea468dc9ee0439e874fac2f74208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageScript: {fileID: 0}
