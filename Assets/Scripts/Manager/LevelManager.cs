@@ -43,6 +43,22 @@ public class LevelManager : SingletonMono<LevelManager>
         {
             if (_ActiveObject.IsIdle())
                 _ActiveObject.SetObjectFocus();
+            else
+            {
+                if (_ActiveObject.IsFinished())
+                {
+                    _Index++;
+                    if (_Index >= _Objects.Count)
+                    {
+                        this.GenerateLevel();
+                    }
+                    else
+                    {
+                        _ActiveObject = _Objects[_Index];
+                        _ActiveObject.SetObjectIdle();
+                    }
+                }
+            }
         }
     }
     #endregion

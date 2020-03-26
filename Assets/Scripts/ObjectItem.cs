@@ -65,7 +65,7 @@ public class ObjectItem : MonoBehaviour
             _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Focus2);
     }
 
-    public void SetObjectTouch ()
+    public void SetObjectTouched ()
     {
         if (_AnimCtrl != null)
             _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Focus);
@@ -84,7 +84,13 @@ public class ObjectItem : MonoBehaviour
         // _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName
     }
 
-    public bool HasFinish ()
+    public void SetObjectIdle()
+    {
+        if (_AnimCtrl != null)
+            _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Idle);
+    }
+
+    public bool IsFinished ()
     {
         return _IsFinished;
     }
