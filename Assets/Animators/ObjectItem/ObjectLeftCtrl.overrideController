@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ObjectLeftCtrl
+  m_Controller: {fileID: 9100000, guid: dd472ad6a1aa8454c8c09cfec6fcd197, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 27d9b3dde3d484e40a89a6e0c8f630bf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 01caa641258ce2a40b6dd823b02f3e81, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f5c09368e4f242b498c5bc2ddd260c33, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: aab8299d48a591740a31270688790d2d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 515b67d7c75a5bf4fbe2a479359574f0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 679e549ddf4bc4e4186f9ead434d50a2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d5acc9efb48de074595bad9079b646d7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 520d60b8cc4920d488d445efd8779934, type: 2}
