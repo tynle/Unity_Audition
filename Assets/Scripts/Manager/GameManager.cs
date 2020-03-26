@@ -2,17 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : SingletonMono<GameManager>
+public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static GameManager instance;
+    private StageManager stageScript;
+    void Awake()
     {
-        
+        if(instance == null)
+            instance = this;
+        else if(instance != this)
+            Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
+        stageScript = GetComponent<StageManager>();
+        InitGame();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void InitGame()
     {
-        
+        stageScript.SetupStage();
     }
 }
