@@ -2,23 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonMono<GameManager>
 {
-    public static GameManager instance;
-    private StageManager stageScript;
-    void Awake()
+    #region params
+    bool _CanPlay;
+    bool _StartGame;
+    #endregion
+
+    #region unity methods
+    [RuntimeInitializeOnLoadMethod]
+    static void OnInitGameManagerStart ()
     {
-        if(instance == null)
-            instance = this;
-        else if(instance != this)
-            Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
-        stageScript = GetComponent<StageManager>();
-        InitGame();
+        Instance._StartGame = false;
+        Instance._CanPlay = false;
+    }
+    
+    #endregion
+
+    #region public methods
+    public bool CanPlay ()
+    {
+        return this._CanPlay;
     }
 
-    public void InitGame()
+    public void ProcessCommand (PoolManager.PoolObject type)
     {
-        stageScript.SetupStage();
+        
     }
+    #endregion
 }
