@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunTestOnPlay: 0
   danceSpot: {x: 0, y: 0, z: 0}
-  smoothReturn: 4
+  smoothReturn: 2.5
 --- !u!1001 &4025864464416515177
 PrefabInstance:
   m_ObjectHideFlags: 0

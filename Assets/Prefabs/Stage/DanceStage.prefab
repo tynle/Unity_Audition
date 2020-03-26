@@ -24848,7 +24848,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.13702697, b: 0, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -69035,9 +69035,9 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.98214144, g: 1, b: 0.4481132, a: 1}
-  m_Intensity: 10
-  m_Range: 45
+  m_Color: {r: 0.98214144, g: 1, b: 0.4481132, a: 0.5254902}
+  m_Intensity: 15
+  m_Range: 50
   m_SpotAngle: 20
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -74151,7 +74151,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.13702697, b: 0, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -74294,9 +74294,9 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.98214144, g: 1, b: 0.4481132, a: 1}
-  m_Intensity: 10
-  m_Range: 45
+  m_Color: {r: 0.98214144, g: 1, b: 0.4481132, a: 0.5254902}
+  m_Intensity: 15
+  m_Range: 50
   m_SpotAngle: 20
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -79218,7 +79218,7 @@ GameObject:
   - component: {fileID: 1703352322}
   - component: {fileID: 1703352321}
   m_Layer: 0
-  m_Name: Finish
+  m_Name: Outro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79331,9 +79331,9 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.98214144, g: 1, b: 0.4481132, a: 1}
-  m_Intensity: 10
-  m_Range: 45
+  m_Color: {r: 0.98214144, g: 1, b: 0.4481132, a: 0.5254902}
+  m_Intensity: 15
+  m_Range: 50
   m_SpotAngle: 20
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -108757,7 +108757,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.13702697, b: 0, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -109129,7 +109129,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0, g: 1, b: 0.11902046, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -109221,7 +109221,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0, g: 1, b: 0.11902046, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -109313,7 +109313,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0, g: 1, b: 0.11902046, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -109411,7 +109411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manInMainSpot: {fileID: 0}
-  mainInLeftSpot: {fileID: 0}
+  manInLeftSpot: {fileID: 0}
   manInRightSpot: {fileID: 0}
   gameSpeed: 1
   frontLightStart: {r: 0.9811321, g: 0.254539, b: 0.35253292, a: 0}
@@ -109419,6 +109419,8 @@ MonoBehaviour:
   behindLightStart: {r: 1, g: 0.3066038, b: 0.9999848, a: 0}
   behindLightEnd: {r: 0.7440659, g: 1, b: 0.19339621, a: 0}
   TestOnPlay: 0
+  Intro: {fileID: 0}
+  Outro: {fileID: 0}
 --- !u!1 &8239522541380822488
 GameObject:
   m_ObjectHideFlags: 0
@@ -109462,7 +109464,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0, g: 1, b: 0.11902046, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -109554,7 +109556,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0, g: 1, b: 0.11902046, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
