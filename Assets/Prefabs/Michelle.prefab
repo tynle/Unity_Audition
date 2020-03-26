@@ -47,8 +47,7 @@ MonoBehaviour:
   RunTestOnPlay: 0
   sceneCamera: {fileID: 0}
   danceSpot: {x: 0, y: 0, z: 0}
-  numberOfDancingMove: 6
-  smoothReturn: 5
+  smoothReturn: 6
 --- !u!1001 &4025864464416515177
 PrefabInstance:
   m_ObjectHideFlags: 0
