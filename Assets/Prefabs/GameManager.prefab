@@ -50,6 +50,11 @@ MonoBehaviour:
   - {fileID: 4541588919506408139, guid: 4ce0204dc23d1da4fb7a3a736ada2d3c, type: 3}
   - {fileID: 7531717906293770757, guid: bb4f40a958193f9439edcfe644b0db49, type: 3}
   - {fileID: 5256947355109913371, guid: 218213f5f249e2445b0777fb1f40a096, type: 3}
+  buttonSpacing: 0.5
+  dancers:
+  - {fileID: 3404839125220617486, guid: 9b7dd62e4fd606b44bff587ccf620421, type: 3}
+  - {fileID: 8347469741457695146, guid: 478e5e31d4a56cf4eaaaac7fc3040f27, type: 3}
+  - {fileID: 2040577442757843048, guid: 79f9f4e85033d7240be53dd7e48a05fa, type: 3}
 --- !u!114 &1979115364352764910
 MonoBehaviour:
   m_ObjectHideFlags: 0
