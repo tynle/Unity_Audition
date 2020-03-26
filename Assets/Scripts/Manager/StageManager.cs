@@ -47,7 +47,7 @@ public class StageManager : MonoBehaviour
             GameObject instance = Instantiate(btnChoice, new Vector3(0f, 0f, 0f), Quaternion.identity);
             instance.transform.SetParent(buttonHolder);
         }
-    
+        LayoutButtons();
     }
     public void LayoutButtons()
     {
