@@ -45,9 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RunTestOnPlay: 0
-  sceneCamera: {fileID: 0}
   danceSpot: {x: 0, y: 0, z: 0}
-  smoothReturn: 6
+  smoothReturn: 2
 --- !u!1001 &4025864464416515177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,6 +118,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5d458d1d8bc3f74fb11c50d2df0ab72,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5d458d1d8bc3f74fb11c50d2df0ab72,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5d458d1d8bc3f74fb11c50d2df0ab72,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: e5d458d1d8bc3f74fb11c50d2df0ab72,
         type: 3}
