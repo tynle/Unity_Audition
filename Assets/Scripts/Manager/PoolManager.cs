@@ -11,7 +11,8 @@ public class PoolManager : SingletonMono<PoolManager>
         Up,
         Down,
         Left,
-        Right
+        Right,
+        All
     }
 
     Dictionary<PoolObject, Pool> _PoolDict;

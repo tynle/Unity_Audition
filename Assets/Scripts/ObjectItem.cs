@@ -17,6 +17,7 @@ public class ObjectItem : MonoBehaviour
     #region  params
     const string TRANS_OBJECT_STATE = "ObjectState";
     const string CLIP_FOCUS2 = "Focus2";
+    bool _IsFinished;
     Animator _AnimCtrl;
 
     PoolManager.PoolObject _PoolObject;
@@ -35,6 +36,7 @@ public class ObjectItem : MonoBehaviour
     private void OnEnable() {
         if (_AnimCtrl != null)
             _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Idle);
+        _IsFinished = false;
     }
 
     // Update is called once per frame
@@ -72,12 +74,27 @@ public class ObjectItem : MonoBehaviour
     {
         return _AnimCtrl.GetNextAnimatorStateInfo(0).IsName(CLIP_FOCUS2);
     }
+
+    public bool HasFinish ()
+    {
+        return _IsFinished;
+    }
     #endregion
 
     #region on animation controller 
     void OnFocus2Exit ()
     {
         _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Gray);
+    }
+
+    void OnGrayExit ()
+    {
+        _IsFinished = true;
+    }
+
+    void OnFocusExit ()
+    {
+        _IsFinished = true;
     }
     #endregion
 }

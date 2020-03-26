@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : SingletonMono<GameManager>
 {
     #region params
-    bool _CanPlay;
+    public bool _CanPlay;
     bool _StartGame;
     #endregion
 
@@ -15,6 +15,16 @@ public class GameManager : SingletonMono<GameManager>
     {
         Instance._StartGame = false;
         Instance._CanPlay = false;
+    }
+
+    private void Update() {
+        if (_CanPlay)
+        {
+            if (!LevelManager.Instance.IsProccessingLevel())
+            {
+                LevelManager.Instance.GenerateLevel();
+            }
+        }
     }
     
     #endregion
@@ -27,7 +37,7 @@ public class GameManager : SingletonMono<GameManager>
 
     public void ProcessCommand (PoolManager.PoolObject type)
     {
-        
+        LevelManager.Instance.ProccessCommand(type);
     }
     #endregion
 }

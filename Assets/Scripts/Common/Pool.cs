@@ -29,6 +29,9 @@ public class Pool : MonoBehaviour
                 }
             }
         }
+
+        if (_LiveObjects == null)
+         _LiveObjects = new List<GameObject>();
     }
     #endregion
 
