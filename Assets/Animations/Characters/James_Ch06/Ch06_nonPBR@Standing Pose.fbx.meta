@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: b8b630f92f269974e898dd343481c29b
+guid: 0328236a0d185f7469d2c46562485bef
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Ch06 Samba Dancing
+    second: Ch06 Standing Pose
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,18 +35,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Ch06 Samba Dancing
+      name: Ch06 Standing Pose
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 716
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

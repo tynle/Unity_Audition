@@ -73,9 +73,10 @@ public class StageManager : MonoBehaviour
 
             m_dancerControl.Add(control);
         }
-        m_danceStageControl.manInLeftSpot = m_dancerControl[0].MyBodyRef();
-        m_danceStageControl.manInMainSpot = m_dancerControl[1].MyBodyRef();
-        m_danceStageControl.manInRightSpot = m_dancerControl[2].MyBodyRef();
+
+        m_danceStageControl.manInLeftSpot = m_dancerControl[0];
+        m_danceStageControl.manInMainSpot = m_dancerControl[1];
+        m_danceStageControl.manInRightSpot = m_dancerControl[2];
     }
 
     public void PlayIntro()
@@ -122,17 +123,41 @@ public class StageManager : MonoBehaviour
         } else {
             startDancers();
         }
-
         
         Invoke("stopDancers", m_bgmInPlay.danceEndTime - (Time.time - m_startInvokeTime));
     }
 
     private void startDancers() {
         foreach(PlayerController control in m_dancerControl) {
-            control.TriggerDance();
+            control.StartDancing();
+        }
+        StartCoroutine("randomGamePlay");
+    }
+    
+    private IEnumerator randomGamePlay() {
+        while(true) {
+            foreach(PlayerController control in m_dancerControl) {
+                int result = Random.Range(1, 5);
+                switch(result) {
+                    case 1:
+                        control.TriggerMiss();
+                        Debug.Log("Miss!");
+                    break;
+
+                    case 2:
+                    case 3:
+                    case 4:
+                        control.TriggerDance();
+                    break;
+                }
+            }
+            yield return new WaitForSeconds(m_bgmInPlay.danceCallTime / 2);
         }
     }
+
     private void stopDancers() {
+        StopCoroutine("randomGamePlay");
+
         // highest score
         int maxScore = 0;
         foreach(PlayerController control in m_dancerControl) {

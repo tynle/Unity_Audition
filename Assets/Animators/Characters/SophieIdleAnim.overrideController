@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SophieIdleAnim
+  m_Controller: {fileID: 9100000, guid: afd9290c4e53285429d4c204eeae2fad, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 0e4fcda03358bb743a9e0faf11f53a37,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: fbe604c1cf9ca5249b0ba663c47d0830,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: f504b55bba73d494cb314e62e230569d,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 9319723e919650f4d92f2bfe7f11e533,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 8a22d575f27d43a4eac9b40e103f3e57,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 71871bcba105f074ea97ff669ee9780d,
+      type: 3}

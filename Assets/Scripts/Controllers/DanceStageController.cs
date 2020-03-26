@@ -6,9 +6,9 @@ using UnityEngine.Playables;
 public class DanceStageController : MonoBehaviour
 {
     // characters
-    public Transform manInMainSpot;
-    public Transform manInLeftSpot;
-    public Transform manInRightSpot;
+    public PlayerController manInMainSpot;
+    public PlayerController manInLeftSpot;
+    public PlayerController manInRightSpot;
 
     // game variable
     public float gameSpeed;
@@ -62,9 +62,9 @@ public class DanceStageController : MonoBehaviour
     
     void Update() {
         // Follow the character
-        m_mainSpotLight.LookAt(manInMainSpot);
-        m_leftSpotLight.LookAt(manInLeftSpot);
-        m_rightSpotLight.LookAt(manInRightSpot);
+        m_mainSpotLight.LookAt(manInMainSpot.MyBodyRef());
+        m_leftSpotLight.LookAt(manInLeftSpot.MyBodyRef());
+        m_rightSpotLight.LookAt(manInRightSpot.MyBodyRef());
 
         // blinking lights
         float t = Mathf.PingPong(Time.time, 0.5f / gameSpeed) / (0.5f / gameSpeed);
