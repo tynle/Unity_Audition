@@ -7,7 +7,18 @@ public class GameManager : SingletonMono<GameManager>
     #region params
     public bool _CanPlay;
     bool _StartGame;
+    private StageManager stageScript;
+    private GAMESTATE currentState;
     #endregion
+    
+    enum GAMESTATE
+    {
+        GS_INIT,
+        GS_CINEMATIC,
+        GS_PREPAIR,
+        GS_DANCE,
+        GS_STATS
+    }
 
     #region unity methods
     [RuntimeInitializeOnLoadMethod]
@@ -15,6 +26,9 @@ public class GameManager : SingletonMono<GameManager>
     {
         Instance._StartGame = false;
         Instance._CanPlay = false;
+        
+        Instance.stageScript = Instance.GetComponent<StageManager>();
+        Instance.currentState = GAMESTATE.GS_INIT;
     }
 
     private void Update() {
@@ -39,5 +53,11 @@ public class GameManager : SingletonMono<GameManager>
     {
         LevelManager.Instance.ProccessCommand(type);
     }
+	
+	public void InitGame()
+    {
+        stageScript.SetupStage();
+    }
+
     #endregion
 }
