@@ -140,14 +140,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 463035834, guid: 478e5e31d4a56cf4eaaaac7fc3040f27, type: 3}
-      propertyPath: RunTestOnPlay
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 463035834, guid: 478e5e31d4a56cf4eaaaac7fc3040f27, type: 3}
-      propertyPath: smoothReturn
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 758816264781885194, guid: 478e5e31d4a56cf4eaaaac7fc3040f27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -217,22 +209,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1223172044, guid: 79f9f4e85033d7240be53dd7e48a05fa, type: 3}
-      propertyPath: RunTestOnPlay
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223172044, guid: 79f9f4e85033d7240be53dd7e48a05fa, type: 3}
-      propertyPath: danceSpot.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223172044, guid: 79f9f4e85033d7240be53dd7e48a05fa, type: 3}
-      propertyPath: danceSpot.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223172044, guid: 79f9f4e85033d7240be53dd7e48a05fa, type: 3}
-      propertyPath: smoothReturn
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 653861526843188099, guid: 79f9f4e85033d7240be53dd7e48a05fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -308,22 +284,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1260944776, guid: 9b7dd62e4fd606b44bff587ccf620421, type: 3}
-      propertyPath: RunTestOnPlay
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1260944776, guid: 9b7dd62e4fd606b44bff587ccf620421, type: 3}
-      propertyPath: danceSpot.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1260944776, guid: 9b7dd62e4fd606b44bff587ccf620421, type: 3}
-      propertyPath: danceSpot.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1260944776, guid: 9b7dd62e4fd606b44bff587ccf620421, type: 3}
-      propertyPath: smoothReturn
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3404839125220617486, guid: 9b7dd62e4fd606b44bff587ccf620421,
         type: 3}
       propertyPath: m_Name
@@ -393,6 +353,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3886849, guid: 4233e9c9e798cac4d929c7be7cbf6630, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0926913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886849, guid: 4233e9c9e798cac4d929c7be7cbf6630, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.21361259
+      objectReference: {fileID: 0}
+    - target: {fileID: 329501306, guid: 4233e9c9e798cac4d929c7be7cbf6630, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000019025075
+      objectReference: {fileID: 0}
+    - target: {fileID: 329501306, guid: 4233e9c9e798cac4d929c7be7cbf6630, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000000028497267
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243923044, guid: 4233e9c9e798cac4d929c7be7cbf6630, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000019025075
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243923044, guid: 4233e9c9e798cac4d929c7be7cbf6630, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000000028497267
+      objectReference: {fileID: 0}
     - target: {fileID: 3499361750665101211, guid: 4233e9c9e798cac4d929c7be7cbf6630,
         type: 3}
       propertyPath: manInMainSpot
@@ -402,17 +386,12 @@ PrefabInstance:
         type: 3}
       propertyPath: mainInLeftSpot
       value: 
-      objectReference: {fileID: 138271319}
+      objectReference: {fileID: 1979843955}
     - target: {fileID: 3499361750665101211, guid: 4233e9c9e798cac4d929c7be7cbf6630,
         type: 3}
       propertyPath: manInRightSpot
       value: 
-      objectReference: {fileID: 1979843955}
-    - target: {fileID: 3499361750665101211, guid: 4233e9c9e798cac4d929c7be7cbf6630,
-        type: 3}
-      propertyPath: TestOnPlay
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 138271319}
     - target: {fileID: 7416940841775205426, guid: 4233e9c9e798cac4d929c7be7cbf6630,
         type: 3}
       propertyPath: m_LocalPosition.x

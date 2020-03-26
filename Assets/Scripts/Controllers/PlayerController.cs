@@ -98,7 +98,6 @@ public class PlayerController : MonoBehaviour
             if (m_missedMove) {
                 m_missedMove = false;
             } else {
-                SmoothRePositioning(m_body, danceSpot, true);
                 m_anim.SetTrigger(TRIGGER_SWITCH);
                 m_anim.SetInteger(INT_TYPE, m_danceRoutine[m_posInRoutine]);
             }
@@ -119,7 +118,6 @@ public class PlayerController : MonoBehaviour
     public void TriggerEnd(bool isWinner) {
         m_posInRoutine = -1;
         StopCoroutine("DanceWithRoutine");
-        SmoothRePositioning(m_body, danceSpot, true);
         if (isWinner) {
             m_anim.SetTrigger(TRIGGER_WIN);
         } else {
@@ -129,23 +127,23 @@ public class PlayerController : MonoBehaviour
 
     ///////////////
     // others    
-    void SmoothRePositioning(Transform me, Vector3 target, bool faceToTarget) {
+    void SmoothRePositioning(Transform me, Vector3 target, bool look = false) {
         if (m_reposCoroutine == null) {
-            m_reposCoroutine = StartCoroutine(doReposition(me, target, faceToTarget));
+            m_reposCoroutine = StartCoroutine(doReposition(me, target, look));
         } else {
             me.position = target;
-            LookStraight(me, me.position + me.forward);
+            if (look) LookStraight(me, me.position + me.forward);
         }
     }
 
-    IEnumerator doReposition(Transform me, Vector3 target, bool faceToTarget) {
+    IEnumerator doReposition(Transform me, Vector3 target, bool look) {
         while (me.position != target) {
-            if (faceToTarget) LookStraight(me, target);
+            if (look) LookStraight(me, target);
             me.position = Vector3.MoveTowards(me.position, target, smoothReturn * Time.deltaTime);
             yield return null;
         }
 
-        LookStraight(me, me.position + me.forward);
+        if (look) LookStraight(me, me.position + me.forward);
         
         // self kill
         StopCoroutine(m_reposCoroutine);
