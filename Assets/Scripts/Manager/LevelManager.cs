@@ -131,7 +131,13 @@ public class LevelManager : SingletonMono<LevelManager>
 
     public void ProccessCommand (PoolManager.PoolObject type)
     {
-
+        if (_ActiveObject != null && _ActiveObject.CanTouch())
+        {
+            if (_ActiveObject.ObjectType == type)
+                _ActiveObject.SetObjectTouched();
+            else
+                _ActiveObject.SetObjectFailed();
+        }
     }
     #endregion
 }

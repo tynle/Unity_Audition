@@ -71,9 +71,17 @@ public class ObjectItem : MonoBehaviour
             _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Focus);
     }
 
+    public void SetObjectFailed ()
+    {
+        if (_AnimCtrl != null)
+            _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Gray);
+    }
+
     public bool CanTouch ()
     {
-        return _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName(CLIP_FOCUS2);
+        if (_AnimCtrl != null)
+            return _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName(CLIP_FOCUS2);
+        return false;
     }
 
     public bool IsIdle ()
