@@ -41,7 +41,7 @@ public class LevelManager : SingletonMono<LevelManager>
     private void Update() {
         if (_ActiveObject != null)
         {
-            if (!_ActiveObject.CanTouch())
+            if (_ActiveObject.IsIdle())
                 _ActiveObject.SetObjectFocus();
         }
     }

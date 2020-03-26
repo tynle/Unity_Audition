@@ -17,6 +17,7 @@ public class ObjectItem : MonoBehaviour
     #region  params
     const string TRANS_OBJECT_STATE = "ObjectState";
     const string CLIP_FOCUS2 = "Focus2";
+    const string CLIP_IDLE = "Idle";
     bool _IsFinished;
     Animator _AnimCtrl;
 
@@ -72,7 +73,15 @@ public class ObjectItem : MonoBehaviour
 
     public bool CanTouch ()
     {
-        return _AnimCtrl.GetNextAnimatorStateInfo(0).IsName(CLIP_FOCUS2);
+        return _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName(CLIP_FOCUS2);
+    }
+
+    public bool IsIdle ()
+    {
+        if (_AnimCtrl != null)
+            return _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName(CLIP_IDLE);
+        return false;
+        // _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName
     }
 
     public bool HasFinish ()
