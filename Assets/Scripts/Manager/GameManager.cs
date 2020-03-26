@@ -59,8 +59,8 @@ public class GameManager : SingletonMono<GameManager>
         switch(currentState)
         {
             case GAMESTATE.GS_INIT:
-                InitGame();
                 currentState = GAMESTATE.GS_CINEMATIC;
+                InitGame();
             break;
             case GAMESTATE.GS_CINEMATIC:
                 currentState = GAMESTATE.GS_PREPAIR;

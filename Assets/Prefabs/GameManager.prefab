@@ -55,6 +55,11 @@ MonoBehaviour:
   - {fileID: 3404839125220617486, guid: 9b7dd62e4fd606b44bff587ccf620421, type: 3}
   - {fileID: 8347469741457695146, guid: 478e5e31d4a56cf4eaaaac7fc3040f27, type: 3}
   - {fileID: 2040577442757843048, guid: 79f9f4e85033d7240be53dd7e48a05fa, type: 3}
+  playList:
+  - {fileID: 2714256201416962350, guid: 9d0bf0f2481e40945a681fe3843c67c0, type: 3}
+  - {fileID: 1040769205761482059, guid: b7a1ad834088e634ca39a27d58e7f401, type: 3}
+  danceStage: {fileID: 7416940841775205427, guid: 4233e9c9e798cac4d929c7be7cbf6630,
+    type: 3}
 --- !u!114 &1979115364352764910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,3 +72,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f85ea468dc9ee0439e874fac2f74208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _CanPlay: 0

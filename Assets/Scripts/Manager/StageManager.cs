@@ -11,10 +11,16 @@ public class StageManager : MonoBehaviour
 
     public GameObject[] dancers;
     private Vector3[] dancerPosition = {
-        new Vector3(-2f, 4f, 0),
-        new Vector3(0f, 3f, 0),
-        new Vector3(2f, 4f, 0)
+        new Vector3(-2f, 0f, 4f),
+        new Vector3(0f, 0f, 0f),
+        new Vector3(2f, 0f, 4f)
     };
+
+    public GameObject[] playList;
+    private BGMObject m_bgmInPlay;
+
+    public GameObject danceStage;
+    private GameObject m_danceStageInstance;
 
     private Transform buttonHolder;
     private Transform dancerHolder;
@@ -23,9 +29,16 @@ public class StageManager : MonoBehaviour
     {
         buttonHolder = new GameObject("ButtonHolder").transform;
         dancerHolder = new GameObject("DancerHolder").transform;
-        GameObject ui = Instantiate(canvas, new Vector3(0f,0f,0f), Quaternion.identity) as GameObject;
+        
+        int randNum = Random.Range(0, playList.Length);
+        m_bgmInPlay = Instantiate(playList[randNum], Vector3.zero, Quaternion.identity).GetComponent<BGMObject>();
+        m_bgmInPlay.PlayBGM();
+        m_danceStageInstance = Instantiate(danceStage, Vector3.zero, Quaternion.identity);
+
+        GameObject ui = Instantiate(canvas, Vector3.zero, Quaternion.identity);
         ui.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
-        ui.GetComponent<Canvas>().worldCamera = Camera.main;
+        ui.GetComponent<Canvas>().worldCamera = m_danceStageInstance.transform.Find("Cameras/Camera Brain").GetComponent<Camera>();
+
         ShowDancers();
     }
     
@@ -33,8 +46,7 @@ public class StageManager : MonoBehaviour
     {
         for(int i = 0; i < dancers.Length; i ++)
         {
-            GameObject dancer = Instantiate(dancers[i], dancerPosition[i], Quaternion.identity) as GameObject;
-            dancer.transform.SetParent(dancerHolder);
+            GameObject dancer = Instantiate(dancers[i], dancerPosition[i], Quaternion.identity, dancerHolder);
         }
         dancerHolder.Rotate(0, 180, 0);
     }
@@ -44,8 +56,7 @@ public class StageManager : MonoBehaviour
         for(int i = 0; i < btnCount; i ++)
         {
             GameObject btnChoice = arrButtons[Random.Range(0, arrButtons.Length)];
-            GameObject instance = Instantiate(btnChoice, new Vector3(0f, 0f, 0f), Quaternion.identity);
-            instance.transform.SetParent(buttonHolder);
+            GameObject instance = Instantiate(btnChoice, new Vector3(0f, 0f, 0f), Quaternion.identity, buttonHolder);
         }
         LayoutButtons();
     }
