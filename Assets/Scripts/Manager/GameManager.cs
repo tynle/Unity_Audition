@@ -32,13 +32,14 @@ public class GameManager : SingletonMono<GameManager>
     }
 
     private void Update() {
-        if (_CanPlay)
-        {
-            if (!LevelManager.Instance.IsProccessingLevel())
-            {
-                LevelManager.Instance.GenerateLevel();
-            }
-        }
+        // if (_CanPlay)
+        // {
+        //     if (!LevelManager.Instance.IsProccessingLevel())
+        //     {
+        //         LevelManager.Instance.GenerateLevel();
+        //     }
+        // }
+        UpdateGame();
     }
     
     #endregion
@@ -52,6 +53,29 @@ public class GameManager : SingletonMono<GameManager>
     public void ProcessCommand (PoolManager.PoolObject type)
     {
         LevelManager.Instance.ProccessCommand(type);
+    }
+    public void UpdateGame()
+    {
+        switch(currentState)
+        {
+            case GAMESTATE.GS_INIT:
+                InitGame();
+                currentState = GAMESTATE.GS_CINEMATIC;
+            break;
+            case GAMESTATE.GS_CINEMATIC:
+                currentState = GAMESTATE.GS_PREPAIR;
+            break;
+            case GAMESTATE.GS_PREPAIR:
+                stageScript.GenerateButtons(stageScript.buttons, 2, 6);
+                stageScript.LayoutButtons();
+                currentState = GAMESTATE.GS_DANCE;
+            break;
+            case GAMESTATE.GS_DANCE:
+            break;
+            case GAMESTATE.GS_STATS:
+            break;
+        }
+
     }
 	
 	public void InitGame()
