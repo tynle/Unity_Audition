@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class DanceStageController : MonoBehaviour
 {
     // characters
     public Transform manInMainSpot;
-    public Transform mainInLeftSpot;
+    public Transform manInLeftSpot;
     public Transform manInRightSpot;
 
     // game variable
@@ -27,9 +28,17 @@ public class DanceStageController : MonoBehaviour
     private Transform m_leftSpotLight;
     private Transform m_rightSpotLight;
 
+    public PlayableDirector Intro;
+    public PlayableDirector Outro;
+
+
     ///////////////
     // system events
     void Awake() {
+        // Cinematics
+        Intro = transform.Find("Cinematic/Intro").gameObject.GetComponent<PlayableDirector>();
+        Outro = transform.Find("Cinematic/Outro").gameObject.GetComponent<PlayableDirector>();
+
         // front lights
         m_frontLightGroup = transform.Find("Lights/FrontLights").gameObject;
         m_frontLightGroup.SetActive(false);
@@ -54,7 +63,7 @@ public class DanceStageController : MonoBehaviour
     void Update() {
         // Follow the character
         m_mainSpotLight.LookAt(manInMainSpot);
-        m_leftSpotLight.LookAt(mainInLeftSpot);
+        m_leftSpotLight.LookAt(manInLeftSpot);
         m_rightSpotLight.LookAt(manInRightSpot);
 
         // blinking lights

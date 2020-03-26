@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public bool RunTestOnPlay;
     public Vector3 danceSpot;
     public float smoothReturn;
+    public int score;
 
     // private parameters
     private Transform m_originBodyTransform;
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
             routine.Add(4);
 
             Setup(routine, 1.5f, 5.0f);
-            m_wrapper.position = new Vector3(m_wrapper.position.x, m_wrapper.position.y, m_wrapper.position.z + 5.0f);
+            m_wrapper.position = new Vector3(m_wrapper.position.x, m_wrapper.position.y, m_wrapper.position.z + 8.0f);
             MoveToDanceSpot();
 
             Invoke("TriggerDance", 10.3f);
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
         m_anim.speed *= gameSpeed;
         m_danceRoutine = danceRoutine;
         m_timePerMove = timePerMove;
+        score = 0;
 
         for(int i = 0; i < m_danceRoutine.Count;) {
             if (m_danceRoutine[i] < 0 || m_danceRoutine[i] > m_numOfMove) {
@@ -129,7 +131,10 @@ public class PlayerController : MonoBehaviour
     }
 
     ///////////////
-    // others    
+    // others
+    public Transform MyBodyRef() {
+        return m_body;
+    }
     void SmoothRePositioning(Transform me, Vector3 target, bool look = false) {
         if (m_reposCoroutine == null) {
             m_reposCoroutine = StartCoroutine(doReposition(me, target, look));

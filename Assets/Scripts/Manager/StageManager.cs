@@ -11,16 +11,18 @@ public class StageManager : MonoBehaviour
 
     public GameObject[] dancers;
     private Vector3[] dancerPosition = {
-        new Vector3(-2f, 0f, 4f),
-        new Vector3(0f, 0f, 0f),
-        new Vector3(2f, 0f, 4f)
+        new Vector3(2f, 0f, 10f),
+        new Vector3(0f, 0f, 8f),
+        new Vector3(-2f, 0f, 10f)
     };
+    private List<PlayerController> m_dancerControl;
 
     public GameObject[] playList;
     private BGMObject m_bgmInPlay;
+    private float m_startInvokeTime;
 
     public GameObject danceStage;
-    private GameObject m_danceStageInstance;
+    private DanceStageController m_danceStageControl;
 
     private Transform buttonHolder;
     private Transform dancerHolder;
@@ -29,34 +31,74 @@ public class StageManager : MonoBehaviour
     {
         buttonHolder = new GameObject("ButtonHolder").transform;
         dancerHolder = new GameObject("DancerHolder").transform;
-        
-        int randNum = Random.Range(0, playList.Length);
-        m_bgmInPlay = Instantiate(playList[randNum], Vector3.zero, Quaternion.identity).GetComponent<BGMObject>();
-        m_bgmInPlay.PlayBGM();
-        m_danceStageInstance = Instantiate(danceStage, Vector3.zero, Quaternion.identity);
 
-        GameObject ui = Instantiate(canvas, Vector3.zero, Quaternion.identity);
-        ui.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
-        ui.GetComponent<Canvas>().worldCamera = m_danceStageInstance.transform.Find("Cameras/Camera Brain").GetComponent<Camera>();
+        m_dancerControl = new List<PlayerController>(dancerPosition.Length);
 
-        ShowDancers();
+        LoadBGM();
+        LoadDanceStage();
+        LoadDancers();
+        LoadUI();
     }
     
-    public void ShowDancers()
+    private void LoadBGM()
+    {
+        int randNum = Random.Range(0, playList.Length);
+        GameObject audioSource = Instantiate(playList[randNum], Vector3.zero, Quaternion.identity);
+        m_bgmInPlay = audioSource.GetComponent<BGMObject>();
+    }
+    
+    
+    private void LoadDanceStage()
+    {
+        GameObject ds = Instantiate(danceStage, Vector3.zero, Quaternion.identity);
+        m_danceStageControl = ds.GetComponent<DanceStageController>();
+    }
+    
+    private void LoadUI()
+    {
+        GameObject ui = Instantiate(canvas, Vector3.zero, Quaternion.identity);
+        /*ui.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+        ui.GetComponent<Canvas>().worldCamera = Camera.main;*/
+    }
+
+    private void LoadDancers()
     {
         for(int i = 0; i < dancers.Length; i ++)
         {
-            GameObject dancer = Instantiate(dancers[i], dancerPosition[i], Quaternion.identity, dancerHolder);
+            GameObject dancer = Instantiate(dancers[i], dancerPosition[i], Quaternion.Euler(0.0f, 180.0f, 0.0f), dancerHolder);
+            
+            PlayerController control = (dancer.GetComponent<PlayerController>());
+            control.Setup(m_bgmInPlay.danceRoutine, m_bgmInPlay.musicSpeed, m_bgmInPlay.danceCallTime);
+            control.smoothReturn *= m_bgmInPlay.musicSpeed;
+
+            m_dancerControl.Add(control);
         }
-        dancerHolder.Rotate(0, 180, 0);
+        m_danceStageControl.manInLeftSpot = m_dancerControl[0].MyBodyRef();
+        m_danceStageControl.manInMainSpot = m_dancerControl[1].MyBodyRef();
+        m_danceStageControl.manInRightSpot = m_dancerControl[2].MyBodyRef();
     }
+
+    public void PlayIntro()
+    {
+        m_bgmInPlay.PlayBGM();
+        m_startInvokeTime = Time.time;
+        
+        m_danceStageControl.LightsOn();
+        m_danceStageControl.Intro.Play();
+
+        foreach(PlayerController control in m_dancerControl)
+        {
+            control.MoveToDanceSpot();
+        }
+    }
+
     public void GenerateButtons(GameObject[] arrButtons, int min, int max)
     {
         int btnCount = Random.Range(min, max + 1);
         for(int i = 0; i < btnCount; i ++)
         {
             GameObject btnChoice = arrButtons[Random.Range(0, arrButtons.Length)];
-            GameObject instance = Instantiate(btnChoice, new Vector3(0f, 0f, 0f), Quaternion.identity, buttonHolder);
+            Instantiate(btnChoice, new Vector3(0f, 0f, 0f), Quaternion.identity, buttonHolder);
         }
         LayoutButtons();
     }
@@ -70,6 +112,38 @@ public class StageManager : MonoBehaviour
         {
             Transform button = buttonHolder.GetChild(i);
             button.position += new Vector3(startX + i*(btnWidth + buttonSpacing), 0, 0);
+        }
+    }
+
+    public void GameStart() {
+        float delay = m_bgmInPlay.danceStartTime - (Time.time - m_startInvokeTime);
+        if(delay > 0) {
+            Invoke("startDancers", delay);
+        } else {
+            startDancers();
+        }
+
+        
+        Invoke("stopDancers", m_bgmInPlay.danceEndTime - (Time.time - m_startInvokeTime));
+    }
+
+    private void startDancers() {
+        foreach(PlayerController control in m_dancerControl) {
+            control.TriggerDance();
+        }
+    }
+    private void stopDancers() {
+        // highest score
+        int maxScore = 0;
+        foreach(PlayerController control in m_dancerControl) {
+            if (maxScore < control.score) {
+                maxScore = control.score;
+            }
+        }
+
+        // trigger ending animation
+        foreach(PlayerController control in m_dancerControl) {
+            control.TriggerEnd(control.score == maxScore);
         }
     }
 }

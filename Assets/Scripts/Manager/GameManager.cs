@@ -13,6 +13,7 @@ public class GameManager : SingletonMono<GameManager>
     
     enum GAMESTATE
     {
+        GS_IDLE,
         GS_INIT,
         GS_CINEMATIC,
         GS_PREPAIR,
@@ -56,22 +57,34 @@ public class GameManager : SingletonMono<GameManager>
     }
     public void UpdateGame()
     {
-        switch(currentState)
+        GAMESTATE state = currentState;
+        currentState = GAMESTATE.GS_IDLE;
+        
+        switch(state)
         {
             case GAMESTATE.GS_INIT:
-                currentState = GAMESTATE.GS_CINEMATIC;
                 InitGame();
             break;
+
             case GAMESTATE.GS_CINEMATIC:
-                currentState = GAMESTATE.GS_PREPAIR;
+                Invoke("PlayCinematic", 3.0f);
             break;
+
             case GAMESTATE.GS_PREPAIR:
                 stageScript.GenerateButtons(stageScript.buttons, 2, 6);
-                stageScript.LayoutButtons();currentState = GAMESTATE.GS_DANCE;
+                stageScript.LayoutButtons();
+                currentState = GAMESTATE.GS_DANCE;
             break;
+
             case GAMESTATE.GS_DANCE:
+                GameStart();
             break;
+
             case GAMESTATE.GS_STATS:
+            break;
+
+            case GAMESTATE.GS_IDLE:
+            default:
             break;
         }
 
@@ -80,6 +93,16 @@ public class GameManager : SingletonMono<GameManager>
 	public void InitGame()
     {
         stageScript.SetupStage();
+        currentState = GAMESTATE.GS_CINEMATIC;
+    }
+	public void PlayCinematic()
+    {
+        stageScript.PlayIntro();
+        currentState = GAMESTATE.GS_PREPAIR;
+    }
+	public void GameStart()
+    {
+        stageScript.GameStart();
     }
 
     #endregion
