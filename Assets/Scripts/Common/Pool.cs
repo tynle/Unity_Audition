@@ -39,10 +39,11 @@ public class Pool : MonoBehaviour
     public GameObject Spawn (Vector3 pos, Quaternion rot)
     {
         GameObject obj = null;
-        obj = _PooledObjects.Find(o => o.activeInHierarchy);
+        obj = _PooledObjects.Find(o => !o.activeSelf);
         if (obj == null)
         {
             obj = Instantiate(_Prefab, transform);
+            Debug.Log("Instantiate object");
         }
 
         obj.SetActive(true);
