@@ -24,6 +24,8 @@ public class StageManager : MonoBehaviour
 
     public GameObject danceStage;
     private DanceStageController m_danceStageControl;
+    
+    private GameObject m_ui;
 
     private Transform buttonHolder;
     private Transform dancerHolder;
@@ -31,10 +33,10 @@ public class StageManager : MonoBehaviour
 
     public void SetupStage()
     {
-        buttonHolder = new GameObject("ButtonHolder").transform;
-        dancerHolder = new GameObject("DancerHolder").transform;
+        if (buttonHolder == null) buttonHolder = new GameObject("ButtonHolder").transform;
+        if (dancerHolder = null) dancerHolder = new GameObject("DancerHolder").transform;
 
-        m_dancerControl = new List<PlayerController>(dancerPosition.Length);
+        if (m_dancerControl == null) m_dancerControl = new List<PlayerController>(dancerPosition.Length);
 
         LoadBGM();
         LoadDanceStage();
@@ -44,6 +46,8 @@ public class StageManager : MonoBehaviour
     
     private void LoadBGM()
     {
+        if (m_bgmInPlay != null) Destroy(m_bgmInPlay.gameObject);
+
         int randNum = Random.Range(0, playList.Length);
         GameObject audioSource = Instantiate(playList[randNum], Vector3.zero, Quaternion.identity);
         m_bgmInPlay = audioSource.GetComponent<BGMObject>();
@@ -52,46 +56,55 @@ public class StageManager : MonoBehaviour
     
     private void LoadDanceStage()
     {
-        GameObject ds = Instantiate(danceStage, Vector3.zero, Quaternion.identity);
-        m_danceStageControl = ds.GetComponent<DanceStageController>();
-        m_danceStageControl.Intro.stopped += OnIntroStop => {isIntroPlaying = false; Debug.Log("intro stopped");};
+        if (m_danceStageControl == null) {
+            GameObject ds = Instantiate(danceStage, Vector3.zero, Quaternion.identity);
+            m_danceStageControl = ds.GetComponent<DanceStageController>();
+            m_danceStageControl.Intro.stopped += OnIntroStop => {isIntroPlaying = false; Debug.Log("intro stopped");};
+        }
+    }
+    
+    private void LoadUI()
+    {
+        if (m_ui == null) {
+            m_ui = Instantiate(canvas, Vector3.zero, Quaternion.identity);
+            m_ui.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+            m_ui.GetComponent<Canvas>().worldCamera = Camera.main;
+        }
+    }
+
+    private void LoadDancers()
+    {
+        if (m_dancerControl.Count <= 0) {
+            // load prefabs
+            for(int i = 0; i < dancers.Length; i ++)
+            {
+                GameObject dancer = Instantiate(dancers[i], dancerPosition[i], Quaternion.Euler(0.0f, 180.0f, 0.0f), dancerHolder);
+                
+                PlayerController control = (dancer.GetComponent<PlayerController>());
+                control.Setup(m_bgmInPlay.danceRoutine, m_bgmInPlay.musicSpeed, m_bgmInPlay.danceCallTime);
+                control.smoothReturn *= m_bgmInPlay.musicSpeed;
+
+                m_dancerControl.Add(control);
+            }
+
+            // spot lights
+            m_danceStageControl.manInLeftSpot = m_dancerControl[0];
+            m_danceStageControl.manInMainSpot = m_dancerControl[1];
+            m_danceStageControl.manInRightSpot = m_dancerControl[2];
+
+            // register to leaderboard
+            for (int i = 0; i < m_dancerControl.Count; i++) {
+                GameManager.gameLeaderBoard.register(i, m_dancerControl[i].name);
+            }
+        } else {
+            // reset leaderboard
+            GameManager.gameLeaderBoard.reset();
+        }
     }
 
     public bool IsIntroPlaying()
     {
         return isIntroPlaying;
-    }
-    
-    private void LoadUI()
-    {
-        GameObject ui = Instantiate(canvas, Vector3.zero, Quaternion.identity);
-        /*ui.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
-        ui.GetComponent<Canvas>().worldCamera = Camera.main;*/
-    }
-
-    private void LoadDancers()
-    {
-        // load prefabs
-        for(int i = 0; i < dancers.Length; i ++)
-        {
-            GameObject dancer = Instantiate(dancers[i], dancerPosition[i], Quaternion.Euler(0.0f, 180.0f, 0.0f), dancerHolder);
-            
-            PlayerController control = (dancer.GetComponent<PlayerController>());
-            control.Setup(m_bgmInPlay.danceRoutine, m_bgmInPlay.musicSpeed, m_bgmInPlay.danceCallTime);
-            control.smoothReturn *= m_bgmInPlay.musicSpeed;
-
-            m_dancerControl.Add(control);
-        }
-
-        // spot lights
-        m_danceStageControl.manInLeftSpot = m_dancerControl[0];
-        m_danceStageControl.manInMainSpot = m_dancerControl[1];
-        m_danceStageControl.manInRightSpot = m_dancerControl[2];
-
-        // register to leaderboard
-        for (int i = 0; i < m_dancerControl.Count; i++) {
-            GameManager.gameLeaderBoard.register(i, m_dancerControl[i].name);
-        }
     }
 
     public void PlayIntro()
@@ -101,6 +114,7 @@ public class StageManager : MonoBehaviour
         
         m_danceStageControl.LightsOn();
         m_danceStageControl.Intro.Play();
+        m_danceStageControl.Intro.playableGraph.GetRootPlayable(0).SetSpeed(35.0f/m_bgmInPlay.danceStartTime);
 
         isIntroPlaying = true;
         foreach(PlayerController control in m_dancerControl)

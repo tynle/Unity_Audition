@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class LeaderboardManager : SingletonMono<GameManager>
 {
@@ -40,6 +39,15 @@ public class LeaderboardManager : SingletonMono<GameManager>
         m_scoreBoard.Add(rec);
     }
 
+    public void reset() {
+        for (int i = 0; i < m_scoreBoard.Count; i++) {
+            Record reset = m_scoreBoard[i];
+            reset.score = 0;
+
+            m_scoreBoard[i] = reset;
+        }
+    }
+
     public void score(int _id, GAMESCORE type) {
         for (int i = 0; i < m_scoreBoard.Count; i++) {
             if (m_scoreBoard[i].id == _id) {
@@ -47,6 +55,7 @@ public class LeaderboardManager : SingletonMono<GameManager>
                 update.score += (int)type;
 
                 m_scoreBoard[i] = update;
+                return;
             }
         }
         

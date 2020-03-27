@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c731e91dc4280ad45a5a617e73342304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  danceStartTime: 31.3
+  danceStartTime: 30.1
   danceEndTime: 238.2
   danceRoutine: 030000000200000004000000030000000200000006000000010000000300000001000000030000000200000006000000
   musicSpeed: 1.15

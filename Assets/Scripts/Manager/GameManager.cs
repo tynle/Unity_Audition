@@ -60,31 +60,32 @@ public class GameManager : SingletonMono<GameManager>
     }
     public void UpdateGame()
     {
-        GAMESTATE state = currentState;
-        currentState = GAMESTATE.GS_IDLE;
-        
-        switch(state)
+        switch(currentState)
         {
             case GAMESTATE.GS_INIT:
+                currentState = GAMESTATE.GS_CINEMATIC;
                 InitGame();
+                Invoke("PlayCinematic", 3.0f);
             break;
 
             case GAMESTATE.GS_CINEMATIC:
-                Invoke("PlayCinematic", 3.0f);
+                // PlayCinematic will take care here
             break;
 
             case GAMESTATE.GS_PREPAIR:
                 if(stageScript.IsIntroPlaying())
                     break;
-                stageScript.GenerateButtons(stageScript.buttons, 2, 6);
-                currentState = GAMESTATE.GS_DANCE;
-            break;
 
-            case GAMESTATE.GS_DANCE:
+                currentState = GAMESTATE.GS_DANCE;
+                stageScript.GenerateButtons(stageScript.buttons, 2, 6);
                 GameStart();
             break;
 
+            case GAMESTATE.GS_DANCE:
+            break;
+
             case GAMESTATE.GS_STATS:
+                currentState = GAMESTATE.GS_IDLE;
                 stageScript.PlayOutro();
             break;
 
@@ -98,7 +99,6 @@ public class GameManager : SingletonMono<GameManager>
 	public void InitGame()
     {
         stageScript.SetupStage();
-        currentState = GAMESTATE.GS_CINEMATIC;
     }
 	public void PlayCinematic()
     {
@@ -108,7 +108,8 @@ public class GameManager : SingletonMono<GameManager>
 	public void GameStart()
     {
         float playTime = stageScript.GameStart();
-
+        
+        Invoke("GenerateUI", playTime - 0.8f);
         Invoke("GameEnd", playTime);
     }
 
