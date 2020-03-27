@@ -85,6 +85,9 @@ public class GameManager : SingletonMono<GameManager>
             break;
 
             case GAMESTATE.GS_DANCE:
+                if (Time.time - m_timeMilestone >= m_gameDuration) {
+                    currentState = GAMESTATE.GS_STATS;
+                }
             break;
 
             case GAMESTATE.GS_STATS:
