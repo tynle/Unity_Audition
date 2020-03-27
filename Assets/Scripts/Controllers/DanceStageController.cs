@@ -83,8 +83,8 @@ public class DanceStageController : MonoBehaviour
     ///////////////
     // Lights
     public void LightsOn() {
-        Invoke("TurnOnBehindLight", 1.0f / gameSpeed);
-        Invoke("TurnOnFrontLight", 2.0f / gameSpeed);
+        //Invoke("TurnOnBehindLight", 1.0f / gameSpeed);
+        //Invoke("TurnOnFrontLight", 2.0f / gameSpeed);
     }
 
     private void TurnOnFrontLight() {
