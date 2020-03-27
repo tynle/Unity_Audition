@@ -74,8 +74,9 @@ public class GameManager : SingletonMono<GameManager>
             break;
 
             case GAMESTATE.GS_PREPAIR:
+                if(stageScript.IsIntroPlaying())
+                    break;
                 stageScript.GenerateButtons(stageScript.buttons, 2, 6);
-                stageScript.LayoutButtons();
                 currentState = GAMESTATE.GS_DANCE;
             break;
 
