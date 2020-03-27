@@ -42,7 +42,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9150943, g: 0.90797484, b: 0.5222944, a: 1}
+  m_Color: {r: 1, g: 0.33490568, b: 0.92118204, a: 1}
   m_Intensity: 1
   m_Range: 50
   m_SpotAngle: 30
@@ -82,7 +82,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 100, y: 5}
   m_BounceIntensity: 1
@@ -116,7 +116,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886848}
-  m_LocalRotation: {x: 0.047988202, y: 0.9338134, z: -0.3269645, w: 0.1370547}
+  m_LocalRotation: {x: 0.047988206, y: 0.9338134, z: -0.3269645, w: 0.13705471}
   m_LocalPosition: {x: -3.5, y: 6, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -24713,7 +24713,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329501305}
-  m_LocalRotation: {x: 0.17172801, y: 0.00000002397201, z: -0.0000000041787445, w: 0.98514444}
+  m_LocalRotation: {x: 0.17172801, y: -0.000000023587427, z: 0.0000000041117034, w: 0.98514444}
   m_LocalPosition: {x: 0, y: 2, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -24854,7 +24854,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -64088,7 +64088,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243923043}
-  m_LocalRotation: {x: 0.17172801, y: 0.00000002397201, z: -0.0000000041787445, w: 0.98514444}
+  m_LocalRotation: {x: 0.17172801, y: -0.000000023587427, z: 0.0000000041117034, w: 0.98514444}
   m_LocalPosition: {x: 0, y: 2, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -74157,7 +74157,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -79266,10 +79266,13 @@ PlayableDirector:
     - 1f1e852b4b9ce6f4fa04c96328d29b20: {fileID: 1738063973}
     - f33d95d344222dc41b64668d383f618b: {fileID: 3886850}
     - 45ff8c9a83d568b4591bf2cd31957586: {fileID: 1421448610}
+    - 7e42eeb2631f4674f94e0be06570294d: {fileID: 1243923045}
     - ee64394288818364d9d022a70fa54b03: {fileID: 1421448610}
     - 9d974a535354e1345a9bcf4a3addfcff: {fileID: 1738063973}
+    - 988eb3891beb9534e86694386a508eda: {fileID: 1421448610}
     - d8003812e5616f44ebcd2eb1cc233650: {fileID: 1738063973}
     - 724f640008a42fb42a761631eb4ceca3: {fileID: 3886850}
+    - 04ba386972a191c4e92db6b66c0ca998: {fileID: 1738063973}
 --- !u!95 &1703352321
 Animator:
   serializedVersion: 3
@@ -108763,7 +108766,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -109135,7 +109138,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -109227,7 +109230,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -109319,7 +109322,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -109419,8 +109422,8 @@ MonoBehaviour:
   behindLightStart: {r: 1, g: 0.3066038, b: 0.9999848, a: 0}
   behindLightEnd: {r: 0.7440659, g: 1, b: 0.19339621, a: 0}
   TestOnPlay: 0
-  Intro: {fileID: 0}
-  Outro: {fileID: 0}
+  Intro: {fileID: 356616004}
+  Outro: {fileID: 1703352322}
 --- !u!1 &8239522541380822488
 GameObject:
   m_ObjectHideFlags: 0
@@ -109470,7 +109473,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -109562,7 +109565,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
