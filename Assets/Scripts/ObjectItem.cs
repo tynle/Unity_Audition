@@ -17,6 +17,8 @@ public class ObjectItem : MonoBehaviour
     #region  params
     const string TRANS_OBJECT_STATE = "ObjectState";
     const string CLIP_FOCUS2 = "Focus2";
+    const string CLIP_IDLE = "Idle";
+    bool _IsFinished;
     Animator _AnimCtrl;
 
     PoolManager.PoolObject _PoolObject;
@@ -35,6 +37,7 @@ public class ObjectItem : MonoBehaviour
     private void OnEnable() {
         if (_AnimCtrl != null)
             _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Idle);
+        _IsFinished = false;
     }
 
     // Update is called once per frame
@@ -62,15 +65,42 @@ public class ObjectItem : MonoBehaviour
             _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Focus2);
     }
 
-    public void SetObjectTouch ()
+    public void SetObjectTouched ()
     {
         if (_AnimCtrl != null)
             _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Focus);
     }
 
+    public void SetObjectFailed ()
+    {
+        if (_AnimCtrl != null)
+            _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Gray);
+    }
+
     public bool CanTouch ()
     {
-        return _AnimCtrl.GetNextAnimatorStateInfo(0).IsName(CLIP_FOCUS2);
+        if (_AnimCtrl != null)
+            return _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName(CLIP_FOCUS2);
+        return false;
+    }
+
+    public bool IsIdle ()
+    {
+        if (_AnimCtrl != null)
+            return _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName(CLIP_IDLE);
+        return false;
+        // _AnimCtrl.GetCurrentAnimatorStateInfo(0).IsName
+    }
+
+    public void SetObjectIdle()
+    {
+        if (_AnimCtrl != null)
+            _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Idle);
+    }
+
+    public bool IsFinished ()
+    {
+        return _IsFinished;
     }
     #endregion
 
@@ -78,6 +108,16 @@ public class ObjectItem : MonoBehaviour
     void OnFocus2Exit ()
     {
         _AnimCtrl.SetInteger(TRANS_OBJECT_STATE, (int)ObjectState.Gray);
+    }
+
+    void OnGrayExit ()
+    {
+        _IsFinished = true;
+    }
+
+    void OnFocusExit ()
+    {
+        _IsFinished = true;
     }
     #endregion
 }
