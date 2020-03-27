@@ -1,0 +1,2455 @@
+fileFormatVersion: 2
+guid: 7dc4606e93d66d9408f640fc425f9783
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7906334564632402933
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_0
+  - first:
+      213: 6564317969702827448
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_1
+  - first:
+      213: -6524290017650661839
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_2
+  - first:
+      213: 2871915372557554716
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_3
+  - first:
+      213: -9035038028134831437
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_4
+  - first:
+      213: -142394023636661976
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_5
+  - first:
+      213: 99451470348427014
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_6
+  - first:
+      213: 9096014483805266136
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_7
+  - first:
+      213: 5924291064330851778
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_8
+  - first:
+      213: -3236080563015307076
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_9
+  - first:
+      213: 5153292937822226659
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_10
+  - first:
+      213: 7783165529073493998
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_11
+  - first:
+      213: -4353803836729964358
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_12
+  - first:
+      213: -4398540867759629865
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_13
+  - first:
+      213: 1614897219731612832
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_14
+  - first:
+      213: -6889433809862542079
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_15
+  - first:
+      213: 7307986992267847049
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_16
+  - first:
+      213: -2303887412818414352
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_17
+  - first:
+      213: 3229975493347210975
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_18
+  - first:
+      213: -5994700715912928744
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_19
+  - first:
+      213: 1678113683059600658
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_20
+  - first:
+      213: -4685528331666464918
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_21
+  - first:
+      213: 4883209605063417854
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_22
+  - first:
+      213: 6000936400743396886
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_23
+  - first:
+      213: 2434951238571761148
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_24
+  - first:
+      213: 7687439070912199022
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_25
+  - first:
+      213: -7954415959657988250
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_26
+  - first:
+      213: -454017638401458080
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_27
+  - first:
+      213: -3182834074069686490
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_28
+  - first:
+      213: 6776810532080556649
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_29
+  - first:
+      213: -8046854204210645639
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_30
+  - first:
+      213: 6719882690458093504
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_31
+  - first:
+      213: -1396850644755924406
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_32
+  - first:
+      213: -6629205138909648208
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_33
+  - first:
+      213: -6861661226297663019
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_34
+  - first:
+      213: -4919711788974464687
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_35
+  - first:
+      213: 1165009741502501296
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_36
+  - first:
+      213: 5261548714428981896
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_37
+  - first:
+      213: 2129624688572066422
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_38
+  - first:
+      213: 3103171893351014403
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_39
+  - first:
+      213: 456898668485849574
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_40
+  - first:
+      213: -5765503489839664518
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_41
+  - first:
+      213: -6063847549099865077
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_42
+  - first:
+      213: 7639788433940801765
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_43
+  - first:
+      213: 3373827698141832072
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_44
+  - first:
+      213: 8823984607274306232
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_45
+  - first:
+      213: -6343203466575616006
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_46
+  - first:
+      213: 283398218473523420
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_47
+  - first:
+      213: -2800059353332786214
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_48
+  - first:
+      213: -4052377886300019160
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_49
+  - first:
+      213: 4559567065397685477
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_50
+  - first:
+      213: 5455710635559619202
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_51
+  - first:
+      213: -7954973055128456077
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_52
+  - first:
+      213: -41602193959432577
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_53
+  - first:
+      213: -385372935072357254
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_54
+  - first:
+      213: 5466142173274097935
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_55
+  - first:
+      213: 4602051865667720006
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_56
+  - first:
+      213: 7003968863323820754
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_57
+  - first:
+      213: -6326226561893025164
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_58
+  - first:
+      213: 3820831111168813545
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_59
+  - first:
+      213: -9139866854514128527
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_60
+  - first:
+      213: -3101372898285015035
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_61
+  - first:
+      213: 6881413588708730539
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_62
+  - first:
+      213: 3035632608531401646
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_63
+  - first:
+      213: -7841226096229497721
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_64
+  - first:
+      213: -4664162521874422258
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_65
+  - first:
+      213: 5883994650776805674
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_66
+  - first:
+      213: -138683316586686942
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_67
+  - first:
+      213: 9011850701334489402
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_68
+  - first:
+      213: -1962634288862370355
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_69
+  - first:
+      213: -5181703320979565618
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_70
+  - first:
+      213: 6365437138531711551
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_71
+  - first:
+      213: -5481314589033582426
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_72
+  - first:
+      213: -6453262510885373714
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_73
+  - first:
+      213: 5942955509515455901
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_74
+  - first:
+      213: 6748365092876125331
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_75
+  - first:
+      213: 8804872794333335933
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_76
+  - first:
+      213: 7556367693296192901
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_77
+  - first:
+      213: -3952884108051366202
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_78
+  - first:
+      213: 7696654875636743554
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_79
+  - first:
+      213: -3280936219920795269
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_80
+  - first:
+      213: -2413651292603480516
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_81
+  - first:
+      213: 8450924120131138695
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_82
+  - first:
+      213: -7488974220677488334
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_83
+  - first:
+      213: -1513935109662597719
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_84
+  - first:
+      213: 3903823409201218772
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_85
+  - first:
+      213: 7982489670262695989
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_86
+  - first:
+      213: 2602605268526876434
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_87
+  - first:
+      213: 7374685094342948128
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_88
+  - first:
+      213: 4122009537087676934
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_89
+  - first:
+      213: 4699018015133100799
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_90
+  - first:
+      213: 3074406808720693649
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_91
+  - first:
+      213: 1790300049956192887
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_92
+  - first:
+      213: 1794925432423550497
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_93
+  - first:
+      213: 560300213596409732
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_94
+  - first:
+      213: -7995393852576979362
+    second: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_95
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb9e40a561f8bd60800000000000000
+      internalID: 7906334564632402933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5b9d80a64291b50800000000000000
+      internalID: 6564317969702827448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1362e4ecbc01575a0800000000000000
+      internalID: -6524290017650661839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14d646b0d71bd720800000000000000
+      internalID: 2871915372557554716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baa0e878c81d9280800000000000000
+      internalID: -9035038028134831437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8298ff2d36d160ef0800000000000000
+      internalID: -142394023636661976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f128ad592516100800000000000000
+      internalID: 99451470348427014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d06503faf88b3e70800000000000000
+      internalID: 9096014483805266136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c51673b55f473250800000000000000
+      internalID: 5924291064330851778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb03de89fd12713d0800000000000000
+      internalID: -3236080563015307076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e84c66af9c248740800000000000000
+      internalID: 5153292937822226659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7ad7ccfcb530c60800000000000000
+      internalID: 7783165529073493998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab84af95a7e2493c0800000000000000
+      internalID: -4353803836729964358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9162f926e35f2c0800000000000000
+      internalID: -4398540867759629865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a46eda1774496610800000000000000
+      internalID: 1614897219731612832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10db393a370d360a0800000000000000
+      internalID: -6889433809862542079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985ec49337f2b6560800000000000000
+      internalID: 7307986992267847049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4f674ca92f600e0800000000000000
+      internalID: -2303887412818414352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd67d2a199d23dc20800000000000000
+      internalID: 3229975493347210975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812ea3dc57b8ecca0800000000000000
+      internalID: -5994700715912928744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d6d73f08bd94710800000000000000
+      internalID: 1678113683059600658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fddfdaec8a9feb0800000000000000
+      internalID: -4685528331666464918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff94917345a4c340800000000000000
+      internalID: 4883209605063417854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6167506bcdb974350800000000000000
+      internalID: 6000936400743396886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd9774204faac120800000000000000
+      internalID: 2434951238571761148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e693e2eea154faa60800000000000000
+      internalID: 7687439070912199022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f33e834dc3c9190800000000000000
+      internalID: -7954415959657988250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060c1550d5103b9f0800000000000000
+      internalID: -454017638401458080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6272114e54d44d3d0800000000000000
+      internalID: -3182834074069686490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a99ca16411c0e50800000000000000
+      internalID: 6776810532080556649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9757aae3cb4d35090800000000000000
+      internalID: -8046854204210645639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c70d0914b1d14d50800000000000000
+      internalID: 6719882690458093504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a3c0b4db36d9ce0800000000000000
+      internalID: -1396850644755924406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baa8189c055004a0800000000000000
+      internalID: -6629205138909648208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1e475287b76c0a0800000000000000
+      internalID: -6861661226297663019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15120e4913ca9bbb0800000000000000
+      internalID: -4919711788974464687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1502aff22fa2010800000000000000
+      internalID: 1165009741502501296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882e3fbcda6c40940800000000000000
+      internalID: 5261548714428981896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a6d3bfe52fd8d10800000000000000
+      internalID: 2129624688572066422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300e92c456ea01b20800000000000000
+      internalID: 3103171893351014403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1b2711bea375600800000000000000
+      internalID: 456898668485849574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72f4d87f11dcffa0800000000000000
+      internalID: -5765503489839664518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c87cf18c2e8dba0800000000000000
+      internalID: -6063847549099865077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8ed247a1bf50a60800000000000000
+      internalID: 7639788433940801765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8832e198a6e32de20800000000000000
+      internalID: 3373827698141832072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba8914bf37157a70800000000000000
+      internalID: 8823984607274306232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7ebbc0e0a68f7a0800000000000000
+      internalID: -6343203466575616006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_47
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8c71e9d25dee300800000000000000
+      internalID: 283398218473523420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbd69e7ad03429d0800000000000000
+      internalID: -2800059353332786214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826607768cf03c7c0800000000000000
+      internalID: -4052377886300019160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec699e9616d64f30800000000000000
+      internalID: 4559567065397685477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a0adddae396bb40800000000000000
+      internalID: 5455710635559619202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374b34357224a9190800000000000000
+      internalID: -7954973055128456077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ecb2766033c6ff0800000000000000
+      internalID: -41602193959432577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7466fa7b51e6aaf0800000000000000
+      internalID: -385372935072357254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09c8c18853abdb40800000000000000
+      internalID: 5466142173274097935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6435c030ac5cddf30800000000000000
+      internalID: 4602051865667720006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d210549298133160800000000000000
+      internalID: 7003968863323820754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ab9b1b57ab438a0800000000000000
+      internalID: -6326226561893025164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e96af7e6a1560530800000000000000
+      internalID: 3820831111168813545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179815a558ba82180800000000000000
+      internalID: -9139866854514128527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500b2b1e7c5b5f4d0800000000000000
+      internalID: -3101372898285015035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6a78b1331bf7f50800000000000000
+      internalID: 6881413588708730539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab4b1426cbb02a20800000000000000
+      internalID: 3035632608531401646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784c7baf86e5e2390800000000000000
+      internalID: -7841226096229497721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e062cfce5e0954fb0800000000000000
+      internalID: -4664162521874422258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21a9dbc5f528a150800000000000000
+      internalID: 5883994650776805674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226d392224c431ef0800000000000000
+      internalID: -138683316586686942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39a5ed4776801d70800000000000000
+      internalID: 9011850701334489402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc56b54438253c4e0800000000000000
+      internalID: -1962634288862370355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_70
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec31d8d8844e618b0800000000000000
+      internalID: -5181703320979565618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_71
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3af24a1a53965850800000000000000
+      internalID: 6365437138531711551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0bc7a2c657ee3b0800000000000000
+      internalID: -5481314589033582426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_73
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8f45cefe76176a0800000000000000
+      internalID: -6453262510885373714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d8e9c7c8e997250800000000000000
+      internalID: 5942955509515455901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_75
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394078f2c4207ad50800000000000000
+      internalID: 6748365092876125331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d715dbef721313a70800000000000000
+      internalID: 8804872794333335933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_77
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d4827b16c9dd860800000000000000
+      internalID: 7556367693296192901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cebf45d8d88429c0800000000000000
+      internalID: -3952884108051366202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_79
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d3b1da4d200da60800000000000000
+      internalID: 7696654875636743554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7978e024e5c772d0800000000000000
+      internalID: -3280936219920795269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_81
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3605bcffecf08ed0800000000000000
+      internalID: -2413651292603480516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_82
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784723c56b6b74570800000000000000
+      internalID: 8450924120131138695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_83
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231e574ef91d11890800000000000000
+      internalID: -7488974220677488334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad9197f90c6dfae0800000000000000
+      internalID: -1513935109662597719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_85
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d40b4315ba2d2630800000000000000
+      internalID: 3903823409201218772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538ab33ef0087ce60800000000000000
+      internalID: 7982489670262695989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217ca19d3bf4e1420800000000000000
+      internalID: 2602605268526876434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025fda24505285660800000000000000
+      internalID: 7374685094342948128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60222eaa5d1543930800000000000000
+      internalID: 4122009537087676934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa6b210df3463140800000000000000
+      internalID: 4699018015133100799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_91
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199d6d024bc7aaa20800000000000000
+      internalID: 3074406808720693649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772c007f86c68d810800000000000000
+      internalID: 1790300049956192887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e8bedbb2bd8e810800000000000000
+      internalID: 1794925432423550497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f4dfe531696c700800000000000000
+      internalID: 560300213596409732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neon_arrow_sign_characterset_v2__rm_vx_ace__by_the_dreaming_boy_88_d8974b5-fullview_95
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56aec907a7aa0190800000000000000
+      internalID: -7995393852576979362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1a1ac094735b29147afd6c86932aea06
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
