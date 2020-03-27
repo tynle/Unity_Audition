@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 public class StageManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class StageManager : MonoBehaviour
 
     private Transform buttonHolder;
     private Transform dancerHolder;
+    private bool isIntroPlaying;
 
     public void SetupStage()
     {
@@ -52,8 +54,13 @@ public class StageManager : MonoBehaviour
     {
         GameObject ds = Instantiate(danceStage, Vector3.zero, Quaternion.identity);
         m_danceStageControl = ds.GetComponent<DanceStageController>();
+        m_danceStageControl.Intro.stopped += OnIntroStop => {isIntroPlaying = false; Debug.Log("intro stopped");};
     }
-    
+
+    public bool IsIntroPlaying()
+    {
+        return isIntroPlaying;
+    }
     private void LoadUI()
     {
         GameObject ui = Instantiate(canvas, Vector3.zero, Quaternion.identity);
@@ -86,13 +93,14 @@ public class StageManager : MonoBehaviour
         
         m_danceStageControl.LightsOn();
         m_danceStageControl.Intro.Play();
-
+        isIntroPlaying = true;
         foreach(PlayerController control in m_dancerControl)
         {
             control.MoveToDanceSpot();
         }
     }
 
+    
     public void GenerateButtons(GameObject[] arrButtons, int min, int max)
     {
         int btnCount = Random.Range(min, max + 1);
