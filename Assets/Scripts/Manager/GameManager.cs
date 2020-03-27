@@ -10,6 +10,8 @@ public class GameManager : SingletonMono<GameManager>
     private StageManager stageScript;
     public static LeaderboardManager leaderboard;
     private GAMESTATE currentState;
+    private float m_timeMilestone;
+    private float m_gameDuration;
     #endregion
     
     enum GAMESTATE
@@ -65,11 +67,13 @@ public class GameManager : SingletonMono<GameManager>
             case GAMESTATE.GS_INIT:
                 currentState = GAMESTATE.GS_CINEMATIC;
                 InitGame();
-                Invoke("PlayCinematic", 3.0f);
             break;
 
             case GAMESTATE.GS_CINEMATIC:
-                // PlayCinematic will take care here
+                if (Time.time - m_timeMilestone >= 3.0f) { //skip 3s to easy see the intro :)
+                    currentState = GAMESTATE.GS_PREPAIR;
+                    stageScript.PlayIntro();
+                }
             break;
 
             case GAMESTATE.GS_PREPAIR:
@@ -77,12 +81,10 @@ public class GameManager : SingletonMono<GameManager>
                     break;
 
                 currentState = GAMESTATE.GS_DANCE;
-                stageScript.GenerateButtons(stageScript.buttons, 2, 6);
                 GameStart();
             break;
 
             case GAMESTATE.GS_DANCE:
-
             break;
 
             case GAMESTATE.GS_STATS:
@@ -106,20 +108,11 @@ public class GameManager : SingletonMono<GameManager>
             GameManager.leaderboard.register(i, dancers[i].name);
         }
     }
-	public void PlayCinematic()
-    {
-        stageScript.PlayIntro();
-        currentState = GAMESTATE.GS_PREPAIR;
-    }
 	public void GameStart()
     {
-        float playTime = stageScript.GameStart();
-        Invoke("GameEnd", playTime);
-    }
-
-    public void GameEnd()
-    {
-        currentState = GAMESTATE.GS_STATS;
+        //stageScript.GenerateButtons(stageScript.buttons, 2, 6);
+        m_timeMilestone = Time.time;
+        m_gameDuration = stageScript.GameStart();
     }
 
     #endregion
