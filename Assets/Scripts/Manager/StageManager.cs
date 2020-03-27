@@ -129,13 +129,13 @@ public class StageManager : MonoBehaviour
     {
         StopCoroutine("randomGamePlay");
 
-        // cinematic
-        m_danceStageControl.Outro.Play();
-
         // trigger ending animation
         for (int i = 0; i < m_dancerControl.Count; i++) {
             m_dancerControl[i].TriggerEnd(winners.IndexOf(i) != -1);
         }
+
+        // cinematic
+        m_danceStageControl.Outro.Play();
     }
 
     public void GenerateButtons(GameObject[] arrButtons, int min, int max)
@@ -215,7 +215,16 @@ public class StageManager : MonoBehaviour
         if (winners.IndexOf(m_bestDancerID) != -1) {
             // Best dancer is still best
         } else {
-            m_dancerControl[m_bestDancerID].SwitchDanceSpot(m_dancerControl[winners[0]].danceSpot);
+            // spot lights
+            if (m_dancerControl[winners[winners.Count - 1]] == m_danceStageControl.manInLeftSpot) {
+                m_danceStageControl.manInLeftSpot = m_dancerControl[m_bestDancerID];
+            } else if (m_dancerControl[winners[winners.Count - 1]] == m_danceStageControl.manInRightSpot) {
+                m_danceStageControl.manInRightSpot = m_dancerControl[m_bestDancerID];
+            }
+            m_danceStageControl.manInMainSpot = m_dancerControl[winners[winners.Count - 1]];
+
+            // moving at last
+            m_dancerControl[m_bestDancerID].SwitchDanceSpot(m_dancerControl[winners[winners.Count - 1]].danceSpot);
             m_dancerControl[winners[winners.Count - 1]].SwitchDanceSpot(bestDanceSpot);
             m_bestDancerID = winners[winners.Count - 1];
         }
