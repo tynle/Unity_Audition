@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     private Transform m_wrapper;
     private Animator m_anim;
     private Animator m_animIdle;
+    public ParticleSystem[] m_bodyParticles;
+    public ParticleSystem[] m_bodyIdleParticles;
 
     // define values
     private static string TRIGGER_RESTART = "Restart";
@@ -209,6 +211,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void switchRenderIdle(bool idle) {
+        // Renderers
         SkinnedMeshRenderer[] renders = m_body.GetComponentsInChildren<SkinnedMeshRenderer>();
         SkinnedMeshRenderer[] renderIdles = m_bodyIdle.GetComponentsInChildren<SkinnedMeshRenderer>();
 
@@ -218,6 +221,23 @@ public class PlayerController : MonoBehaviour
 
         foreach (SkinnedMeshRenderer r in renderIdles) {
             r.enabled = idle;
+        }
+
+        // Particles
+        foreach (ParticleSystem p in m_bodyParticles) {
+            if (idle) {
+                p.gameObject.SetActive(false);
+            } else {
+                p.gameObject.SetActive(true);
+            }
+        }
+        
+        foreach (ParticleSystem p in m_bodyIdleParticles) {
+            if (idle) {
+                p.gameObject.SetActive(true);
+            } else {
+                p.gameObject.SetActive(false);
+            }
         }
     }
 }
