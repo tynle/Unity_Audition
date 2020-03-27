@@ -8,6 +8,7 @@ public class GameManager : SingletonMono<GameManager>
     public bool _CanPlay;
     bool _StartGame;
     private StageManager stageScript;
+    public static LeaderboardManager gameLeaderBoard;
     private GAMESTATE currentState;
     #endregion
     
@@ -29,6 +30,8 @@ public class GameManager : SingletonMono<GameManager>
         Instance._CanPlay = false;
         
         Instance.stageScript = Instance.GetComponent<StageManager>();
+        GameManager.gameLeaderBoard = Instance.GetComponent<LeaderboardManager>();
+
         Instance.currentState = GAMESTATE.GS_INIT;
     }
 
@@ -81,6 +84,7 @@ public class GameManager : SingletonMono<GameManager>
             break;
 
             case GAMESTATE.GS_STATS:
+                stageScript.PlayOutro();
             break;
 
             case GAMESTATE.GS_IDLE:
@@ -102,7 +106,14 @@ public class GameManager : SingletonMono<GameManager>
     }
 	public void GameStart()
     {
-        stageScript.GameStart();
+        float playTime = stageScript.GameStart();
+
+        Invoke("GameEnd", playTime);
+    }
+
+    public void GameEnd()
+    {
+        currentState = GAMESTATE.GS_STATS;
     }
 
     #endregion

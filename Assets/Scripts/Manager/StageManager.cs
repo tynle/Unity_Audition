@@ -63,6 +63,7 @@ public class StageManager : MonoBehaviour
 
     private void LoadDancers()
     {
+        // load prefabs
         for(int i = 0; i < dancers.Length; i ++)
         {
             GameObject dancer = Instantiate(dancers[i], dancerPosition[i], Quaternion.Euler(0.0f, 180.0f, 0.0f), dancerHolder);
@@ -74,9 +75,15 @@ public class StageManager : MonoBehaviour
             m_dancerControl.Add(control);
         }
 
+        // spot lights
         m_danceStageControl.manInLeftSpot = m_dancerControl[0];
         m_danceStageControl.manInMainSpot = m_dancerControl[1];
         m_danceStageControl.manInRightSpot = m_dancerControl[2];
+
+        // register to leaderboard
+        for (int i = 0; i < m_dancerControl.Count; i++) {
+            GameManager.gameLeaderBoard.register(i, m_dancerControl[i].name);
+        }
     }
 
     public void PlayIntro()
@@ -90,6 +97,19 @@ public class StageManager : MonoBehaviour
         foreach(PlayerController control in m_dancerControl)
         {
             control.MoveToDanceSpot();
+        }
+    }
+
+    public void PlayOutro()
+    {
+        StopCoroutine("randomGamePlay");
+
+        // cinematic
+        m_danceStageControl.Outro.Play();
+
+        // trigger ending animation
+        for (int i = 0; i < m_dancerControl.Count; i++) {
+            m_dancerControl[i].TriggerEnd(GameManager.gameLeaderBoard.resultOf(i));
         }
     }
 
@@ -116,15 +136,15 @@ public class StageManager : MonoBehaviour
         }
     }
 
-    public void GameStart() {
+    public float GameStart() {
         float delay = m_bgmInPlay.danceStartTime - (Time.time - m_startInvokeTime);
         if(delay > 0) {
             Invoke("startDancers", delay);
         } else {
             startDancers();
         }
-        
-        Invoke("stopDancers", m_bgmInPlay.danceEndTime - (Time.time - m_startInvokeTime));
+
+        return m_bgmInPlay.danceEndTime - (Time.time - m_startInvokeTime);
     }
 
     private void startDancers() {
@@ -136,39 +156,31 @@ public class StageManager : MonoBehaviour
     
     private IEnumerator randomGamePlay() {
         while(true) {
-            foreach(PlayerController control in m_dancerControl) {
+            for(int i = 0; i < m_dancerControl.Count; i++) {
                 int result = Random.Range(1, 5);
                 switch(result) {
                     case 1:
-                        control.TriggerMiss();
-                        Debug.Log("Miss!");
+                        m_dancerControl[i].TriggerMiss();
+                        GameManager.gameLeaderBoard.score(i, LeaderboardManager.GAMESCORE.MISS);
                     break;
 
                     case 2:
+                        m_dancerControl[i].TriggerDance();
+                        GameManager.gameLeaderBoard.score(i, LeaderboardManager.GAMESCORE.COOL);
+                    break;
+
                     case 3:
+                        m_dancerControl[i].TriggerDance();
+                        GameManager.gameLeaderBoard.score(i, LeaderboardManager.GAMESCORE.GREAT);
+                    break;
+
                     case 4:
-                        control.TriggerDance();
+                        m_dancerControl[i].TriggerDance();
+                        GameManager.gameLeaderBoard.score(i, LeaderboardManager.GAMESCORE.PERFECT);
                     break;
                 }
             }
             yield return new WaitForSeconds(m_bgmInPlay.danceCallTime / 2);
-        }
-    }
-
-    private void stopDancers() {
-        StopCoroutine("randomGamePlay");
-
-        // highest score
-        int maxScore = 0;
-        foreach(PlayerController control in m_dancerControl) {
-            if (maxScore < control.score) {
-                maxScore = control.score;
-            }
-        }
-
-        // trigger ending animation
-        foreach(PlayerController control in m_dancerControl) {
-            control.TriggerEnd(control.score == maxScore);
         }
     }
 }
