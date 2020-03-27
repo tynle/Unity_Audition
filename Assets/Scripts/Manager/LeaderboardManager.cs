@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class LeaderboardManager : SingletonMono<GameManager>
 {
+    private List<Record> m_scoreBoard;
+    public List<string> debugScoreBoard;
+    public List<int> debugScore;
+
     public enum GAMESCORE {
         MISS = -10,
         COOL = 15,
@@ -11,7 +15,7 @@ public class LeaderboardManager : SingletonMono<GameManager>
         PERFECT = 50
     }
 
-    public struct Record : IComparer<Record>
+    public struct Record
     {
         public int id;
         public string name;
@@ -21,16 +25,26 @@ public class LeaderboardManager : SingletonMono<GameManager>
             id = _id;
             name = _name;
             score = _score;
-        }
-        public int Compare(Record a, Record b) {
-            return a.score.CompareTo(b.score);
         } 
     }
 
-    public List<Record> m_scoreBoard;
-
     void Awake() {
         m_scoreBoard = new List<Record>();
+        debugScoreBoard = new List<string>();
+        debugScore = new List<int>();
+    }
+
+    void Update() {
+        debug();
+    }
+
+    void debug() {
+        debugScoreBoard.Clear();
+        debugScore.Clear();
+        foreach(Record rec in m_scoreBoard) {
+            debugScoreBoard.Add(rec.name);
+            debugScore.Add(rec.score);
+        }
     }
 
     public void register(int _id, string _name) {
@@ -40,12 +54,7 @@ public class LeaderboardManager : SingletonMono<GameManager>
     }
 
     public void reset() {
-        for (int i = 0; i < m_scoreBoard.Count; i++) {
-            Record reset = m_scoreBoard[i];
-            reset.score = 0;
-
-            m_scoreBoard[i] = reset;
-        }
+        m_scoreBoard.Clear();
     }
 
     public void score(int _id, GAMESCORE type) {
@@ -58,18 +67,37 @@ public class LeaderboardManager : SingletonMono<GameManager>
                 return;
             }
         }
-        
-        // Sort
-        m_scoreBoard.Sort(new Record());
+    }
+
+    private int getHighestScore() {
+        int highestScore = m_scoreBoard[0].score;
+        foreach(Record rec in m_scoreBoard) {
+            if (rec.score > highestScore) {
+                highestScore = rec.score;
+            }
+        }
+        return highestScore;
     }
 
     public bool resultOf(int _id) {
-        int highestScore = m_scoreBoard[0].score;
+        int highestScore = getHighestScore();
         foreach (Record rec in m_scoreBoard) {
             if (rec.id == _id) {
                 return (rec.score == highestScore);
             }
         }
         return false;
+    }
+
+    public List<int> getWinners() {
+        int highestScore = getHighestScore();
+        List<int> winners = new List<int>();
+        
+        foreach (Record rec in m_scoreBoard) {
+            if (rec.score == highestScore) {
+                winners.Add(rec.id);
+            }
+        }
+        return winners;
     }
 }

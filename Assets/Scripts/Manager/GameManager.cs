@@ -8,7 +8,7 @@ public class GameManager : SingletonMono<GameManager>
     public bool _CanPlay;
     bool _StartGame;
     private StageManager stageScript;
-    public static LeaderboardManager gameLeaderBoard;
+    public static LeaderboardManager leaderboard;
     private GAMESTATE currentState;
     #endregion
     
@@ -30,7 +30,7 @@ public class GameManager : SingletonMono<GameManager>
         Instance._CanPlay = false;
         
         Instance.stageScript = Instance.GetComponent<StageManager>();
-        GameManager.gameLeaderBoard = Instance.GetComponent<LeaderboardManager>();
+        GameManager.leaderboard = Instance.GetComponent<LeaderboardManager>();
 
         Instance.currentState = GAMESTATE.GS_INIT;
     }
@@ -82,11 +82,12 @@ public class GameManager : SingletonMono<GameManager>
             break;
 
             case GAMESTATE.GS_DANCE:
+
             break;
 
             case GAMESTATE.GS_STATS:
                 currentState = GAMESTATE.GS_IDLE;
-                stageScript.PlayOutro();
+                stageScript.PlayOutro(GameManager.leaderboard.getWinners());
             break;
 
             case GAMESTATE.GS_IDLE:
@@ -98,7 +99,12 @@ public class GameManager : SingletonMono<GameManager>
 	
 	public void InitGame()
     {
-        stageScript.SetupStage();
+        List<PlayerController> dancers = stageScript.SetupStage();
+        
+        GameManager.leaderboard.reset();
+        for (int i = 0; i < dancers.Count; i++) {
+            GameManager.leaderboard.register(i, dancers[i].name);
+        }
     }
 	public void PlayCinematic()
     {
@@ -108,8 +114,6 @@ public class GameManager : SingletonMono<GameManager>
 	public void GameStart()
     {
         float playTime = stageScript.GameStart();
-        
-        Invoke("GenerateUI", playTime - 0.8f);
         Invoke("GameEnd", playTime);
     }
 

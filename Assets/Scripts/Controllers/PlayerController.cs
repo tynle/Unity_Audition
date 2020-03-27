@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour
     // public parameters
     public bool RunTestOnPlay;
     public Vector3 danceSpot;
-    public float smoothReturn;
+    public float moveSpeed;
+    public float switchSpeed;
     public int score;
 
     // private parameters
@@ -111,14 +112,14 @@ public class PlayerController : MonoBehaviour
 
     ///////////////
     // dance spot
-    public void MoveToDanceSpot() {        
+    public void MoveToDanceSpot() {
         m_anim.SetInteger(INT_TYPE, 0);
-        SmoothRePositioning(m_wrapper, danceSpot, false);
+        SmoothRePositioning(m_wrapper, danceSpot, true);
     }
     
     public void SwitchDanceSpot(Vector3 spot) {
         danceSpot = spot;
-        MoveToDanceSpot();
+        SmoothRePositioning(m_wrapper, danceSpot, false);
     }
 
     ///////////////
@@ -181,23 +182,15 @@ public class PlayerController : MonoBehaviour
             return m_body;
         }
     }
-    void SmoothRePositioning(Transform me, Vector3 target, bool look = false) {
-        if (m_reposCoroutine == null) {
-            m_reposCoroutine = StartCoroutine(doReposition(me, target, look));
-        } else {
-            me.position = target;
-            if (look) LookStraight(me, me.position + me.forward);
-        }
+    void SmoothRePositioning(Transform me, Vector3 target, bool cinematic) {
+        m_reposCoroutine = StartCoroutine(doReposition(me, target, cinematic? moveSpeed : switchSpeed));
     }
 
-    IEnumerator doReposition(Transform me, Vector3 target, bool look) {
+    IEnumerator doReposition(Transform me, Vector3 target, float speed) {
         while (me.position != target) {
-            if (look) LookStraight(me, target);
-            me.position = Vector3.MoveTowards(me.position, target, smoothReturn * Time.deltaTime);
+            me.position = Vector3.MoveTowards(me.position, target, speed * Time.deltaTime);
             yield return null;
         }
-
-        if (look) LookStraight(me, me.position + me.forward);
         
         // self kill
         StopCoroutine(m_reposCoroutine);
