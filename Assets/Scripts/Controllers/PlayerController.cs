@@ -226,17 +226,17 @@ public class PlayerController : MonoBehaviour
         // Particles
         foreach (ParticleSystem p in m_bodyParticles) {
             if (idle) {
-                p.gameObject.SetActive(false);
+                p.Stop();
             } else {
-                p.gameObject.SetActive(true);
+                p.Play();
             }
         }
         
         foreach (ParticleSystem p in m_bodyIdleParticles) {
             if (idle) {
-                p.gameObject.SetActive(true);
+                p.Play();
             } else {
-                p.gameObject.SetActive(false);
+                p.Stop();
             }
         }
     }
