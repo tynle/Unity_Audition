@@ -11,11 +11,18 @@ public class StageManager : MonoBehaviour
     public float buttonSpacing = 0.5f;
 
     public GameObject[] dancers;
-    private Vector3[] dancerPosition = {
+    private Vector3[] dancerStartPose = {
         new Vector3(2f, 0f, 10f),
         new Vector3(0f, 0f, 8f),
         new Vector3(-2f, 0f, 10f)
     };
+    private Vector3[] dancerSpots = {
+        new Vector3(4f, 0f, 3f),
+        new Vector3(0f, 0f, 0f),
+        new Vector3(-4f, 0f, 3f)
+    };
+    private Vector3 bestDanceSpot = Vector3.zero;
+    private int m_bestDancerID = 1;
     private List<PlayerController> m_dancerControl;
 
     public GameObject[] playList;
@@ -31,17 +38,19 @@ public class StageManager : MonoBehaviour
     private Transform dancerHolder;
     private bool isIntroPlaying;
 
-    public void SetupStage()
+    public List<PlayerController> SetupStage()
     {
         if (buttonHolder == null) buttonHolder = new GameObject("ButtonHolder").transform;
-        if (dancerHolder = null) dancerHolder = new GameObject("DancerHolder").transform;
+        if (dancerHolder == null) dancerHolder = new GameObject("DancerHolder").transform;
 
-        if (m_dancerControl == null) m_dancerControl = new List<PlayerController>(dancerPosition.Length);
+        if (m_dancerControl == null) m_dancerControl = new List<PlayerController>(dancerSpots.Length);
 
         LoadBGM();
         LoadDanceStage();
         LoadDancers();
         LoadUI();
+
+        return m_dancerControl;
     }
     
     private void LoadBGM()
@@ -78,11 +87,12 @@ public class StageManager : MonoBehaviour
             // load prefabs
             for(int i = 0; i < dancers.Length; i ++)
             {
-                GameObject dancer = Instantiate(dancers[i], dancerPosition[i], Quaternion.Euler(0.0f, 180.0f, 0.0f), dancerHolder);
+                GameObject dancer = Instantiate(dancers[i], dancerStartPose[i], Quaternion.Euler(0.0f, 180.0f, 0.0f), dancerHolder);
                 
                 PlayerController control = (dancer.GetComponent<PlayerController>());
                 control.Setup(m_bgmInPlay.danceRoutine, m_bgmInPlay.musicSpeed, m_bgmInPlay.danceCallTime);
-                control.smoothReturn *= m_bgmInPlay.musicSpeed;
+                control.moveSpeed *= m_bgmInPlay.musicSpeed;
+                control.danceSpot = dancerSpots[i];
 
                 m_dancerControl.Add(control);
             }
@@ -91,14 +101,6 @@ public class StageManager : MonoBehaviour
             m_danceStageControl.manInLeftSpot = m_dancerControl[0];
             m_danceStageControl.manInMainSpot = m_dancerControl[1];
             m_danceStageControl.manInRightSpot = m_dancerControl[2];
-
-            // register to leaderboard
-            for (int i = 0; i < m_dancerControl.Count; i++) {
-                GameManager.gameLeaderBoard.register(i, m_dancerControl[i].name);
-            }
-        } else {
-            // reset leaderboard
-            GameManager.gameLeaderBoard.reset();
         }
     }
 
@@ -123,7 +125,7 @@ public class StageManager : MonoBehaviour
         }
     }
 
-    public void PlayOutro()
+    public void PlayOutro(List<int> winners)
     {
         StopCoroutine("randomGamePlay");
 
@@ -132,7 +134,7 @@ public class StageManager : MonoBehaviour
 
         // trigger ending animation
         for (int i = 0; i < m_dancerControl.Count; i++) {
-            m_dancerControl[i].TriggerEnd(GameManager.gameLeaderBoard.resultOf(i));
+            m_dancerControl[i].TriggerEnd(winners.IndexOf(i) != -1);
         }
     }
 
@@ -184,26 +186,38 @@ public class StageManager : MonoBehaviour
                 switch(result) {
                     case 1:
                         m_dancerControl[i].TriggerMiss();
-                        GameManager.gameLeaderBoard.score(i, LeaderboardManager.GAMESCORE.MISS);
+                        GameManager.leaderboard.score(i, LeaderboardManager.GAMESCORE.MISS);
                     break;
 
                     case 2:
                         m_dancerControl[i].TriggerDance();
-                        GameManager.gameLeaderBoard.score(i, LeaderboardManager.GAMESCORE.COOL);
+                        GameManager.leaderboard.score(i, LeaderboardManager.GAMESCORE.COOL);
                     break;
 
                     case 3:
                         m_dancerControl[i].TriggerDance();
-                        GameManager.gameLeaderBoard.score(i, LeaderboardManager.GAMESCORE.GREAT);
+                        GameManager.leaderboard.score(i, LeaderboardManager.GAMESCORE.GREAT);
                     break;
 
                     case 4:
                         m_dancerControl[i].TriggerDance();
-                        GameManager.gameLeaderBoard.score(i, LeaderboardManager.GAMESCORE.PERFECT);
+                        GameManager.leaderboard.score(i, LeaderboardManager.GAMESCORE.PERFECT);
                     break;
                 }
             }
+            SwitchDanceSpot();
             yield return new WaitForSeconds(m_bgmInPlay.danceCallTime / 2);
+        }
+    }
+
+    private void SwitchDanceSpot() {
+        List<int> winners = GameManager.leaderboard.getWinners();
+        if (winners.IndexOf(m_bestDancerID) != -1) {
+            // Best dancer is still best
+        } else {
+            m_dancerControl[m_bestDancerID].SwitchDanceSpot(m_dancerControl[winners[0]].danceSpot);
+            m_dancerControl[winners[winners.Count - 1]].SwitchDanceSpot(bestDanceSpot);
+            m_bestDancerID = winners[winners.Count - 1];
         }
     }
 }

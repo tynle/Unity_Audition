@@ -53,7 +53,8 @@ MonoBehaviour:
   - {fileID: 1959111980147917131}
   RunTestOnPlay: 0
   danceSpot: {x: -4, y: 0, z: 2}
-  smoothReturn: 2.5
+  moveSpeed: 4
+  switchSpeed: 8
   score: 0
 --- !u!1001 &1192128429
 PrefabInstance:
